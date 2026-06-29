@@ -1,0 +1,73 @@
+@media (max-width: 1024px) {
+  .hero__grid,
+  .about__grid,
+  .ambience__grid,
+  .sedation__grid,
+  .faq__grid,
+  .contact__grid {
+    grid-template-columns: 1fr;
+  }
+  .hero__visual { order: -1; max-width: 460px; margin-inline: auto; }
+  .section-header { grid-template-columns: 1fr; }
+  .specialties__grid,
+  .team__grid { grid-template-columns: repeat(2, 1fr); }
+  .journey__steps { grid-template-columns: repeat(2, 1fr); }
+  .journey__steps::before { display: none; }
+  .trust__list { grid-template-columns: repeat(2, 1fr); }
+  .trust__list li::before { display: none !important; }
+  .about__pillars { grid-template-columns: 1fr; }
+  .site-footer__grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 860px) {
+  .primary-nav {
+    position: fixed;
+    inset: 0;
+    background: rgba(255, 253, 249, 0.98);
+    backdrop-filter: blur(20px);
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.5rem;
+    transform: translateX(100%);
+    transition: transform var(--transition-slow);
+    z-index: 105;
+  }
+  .primary-nav.is-open { transform: translateX(0); }
+  .primary-nav ul { flex-direction: column; gap: 1.6rem; text-align: center; }
+  .primary-nav a { font-size: 1.4rem; font-family: var(--font-heading); color: var(--color-heading); }
+  .primary-nav__cta { padding: 1rem 2rem; font-size: 1rem; }
+  .menu-toggle { display: inline-flex; }
+
+  .concerns__panel { grid-template-columns: 1fr; }
+  .ambience__media { grid-template-columns: 1fr; min-height: 0; }
+  .ambience__figure--b { margin-top: 0; max-width: 280px; margin-inline: auto; }
+  .ambience__chip { left: 50%; transform: translateX(-50%); }
+  .contact__form { grid-template-columns: 1fr; }
+  .contact__info li { grid-template-columns: 1fr; gap: 0.2rem; }
+}
+
+@media (max-width: 640px) {
+  .hero { padding-top: clamp(6rem, 22vw, 8rem); }
+  .hero__title { font-size: clamp(2.1rem, 9vw, 2.8rem); }
+  .hero__quote { display: none; }
+  .hero__badge { left: 50%; transform: translateX(-50%); bottom: -28px; width: max-content; }
+  .hero__actions .button { flex: 1; }
+  .hero__scroll { display: none; }
+
+  .specialties__grid,
+  .team__grid,
+  .journey__steps,
+  .trust__list { grid-template-columns: 1fr; }
+
+  .sedation { margin-inline: var(--container-padding); border-radius: var(--radius-large); }
+  .site-footer__grid { grid-template-columns: 1fr; }
+
+  .about__sticker { bottom: -20px; right: 50%; transform: translateX(50%); }
+}
+
+@media (max-width: 380px) {
+  .brand__name { font-size: 1.15rem; }
+  .brand__sub { display: none; }
+  .brand__mark { width: 44px; height: 44px; }
+  .brand__mark svg { width: 26px; height: 26px; }
+}
