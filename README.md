@@ -19,7 +19,7 @@ Vercel (o `vercel.json` já define cache para imagens, fontes, CSS e JS), Netlif
 
 - [ ] **Domínio:** hoje é `site-dra-aline.vercel.app`. Ao trocar, atualize canonical, `og:url`, `og:image`, JSON-LD (`index.html`), `sitemap.xml` e `robots.txt`.
 - [ ] **Avaliações:** nota e número (5,0 · 38) foram conferidos no Google Maps em 16/10/2026. Atualize os dois pontos em `index.html` (hero e seção "Famílias") quando mudarem.
-- [ ] **Logo oficial em vetor:** a marca no cabeçalho e as cores foram reconstruídas a partir de fotos do letreiro. Com o arquivo original, ajuste os HEX em `css/tokens.css` e o SVG da marca.
+- [ ] **Logo em vetor (SVG/PDF):** o logo oficial está em PNG (477px). Com o vetor, troque `assets/brand/logo-aline-sanfelice.png` por uma versão nítida em qualquer tamanho.
 - [ ] **Equipe:** confirmar nomes completos e áreas dos colegas (seção "No mesmo consultório").
 
 ## Onde editar
@@ -59,11 +59,13 @@ PRODUCT.md        verdade do produto (público, provas, o que não pode ser inve
 
 | Papel | HEX | Origem |
 |---|---|---|
-| Fundo | `#F9F8FB` | parede branca do letreiro |
-| Azul Aline (assinatura) | `#0F4E70` | tipografia dos posts do Instagram |
-| Grafite (texto) | `#2B2D3A` | faixa da fachada |
-| Lilás (detalhes) | `#C3BDE3` | letras "Aline Sanfelice" do letreiro |
-| Arco-íris (só acentos finos) | `#F2BFB3` `#EFDCAE` `#A8D5BF` `#ACD5DC` | faixas do logo |
+| Azul Aline (cor forte: títulos, botões) | `#0F4E70` | tipografia dos posts do Instagram |
+| Texto | `#1F2A37` | |
+| Rosa · Amarelo · Verde · Azul · Lilás | `#FBB5B7` `#FEF4AE` `#A9D3B7` `#ADD8ED` `#E6CBFC` | faixas do logo oficial (`assets/brand/logo-aline-sanfelice.png`) |
+| Dente | `#FDD6E2` | logo oficial |
+| Campos claros | `#FFF1F1` `#FFFBE8` `#EDF7F0` `#EEF7FC` `#F7F0FE` | versões claras das faixas, usadas como fundo de cartões e seções |
+
+Fontes: Bricolage Grotesque (títulos) e Figtree (texto), servidas de `assets/fonts`.
 
 ## Aviso
 

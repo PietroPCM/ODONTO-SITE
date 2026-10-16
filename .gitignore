@@ -8,3 +8,4 @@
 .impeccable/decision-*.json
 .impeccable/config.local.json
 .impeccable/questions/
+.impeccable/.impeccable/

@@ -10,7 +10,7 @@ export function initMap() {
   button.addEventListener("click", () => {
     const frame = template.content.firstElementChild.cloneNode(true);
     frame.setAttribute("tabindex", "0");
-    root.querySelector(".place__map-row")?.remove();
+    button.remove();
     root.append(frame);
     frame.focus({ preventScroll: true });
   });

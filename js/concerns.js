@@ -1,11 +1,10 @@
-// Dúvidas dos pais: acordeão no celular, painel único ao lado no desktop.
+// Dúvidas dos pais: acordeão com uma resposta aberta por vez.
 
 export function initConcerns() {
   const root = document.querySelector("[data-concerns]");
   if (!root) return;
 
   const buttons = [...root.querySelectorAll("[data-concern]")];
-  const desktop = window.matchMedia("(min-width: 960px)");
   const panelOf = (button) => document.getElementById(button.getAttribute("aria-controls"));
 
   const set = (button, expanded) => {
@@ -16,8 +15,6 @@ export function initConcerns() {
   buttons.forEach((button, index) => {
     button.addEventListener("click", () => {
       const expanded = button.getAttribute("aria-expanded") === "true";
-      // No desktop sempre há uma resposta aberta; no celular dá para fechar todas.
-      if (expanded && desktop.matches) return;
       buttons.forEach((other) => set(other, other === button ? !expanded : false));
     });
 
@@ -34,10 +31,5 @@ export function initConcerns() {
         buttons[buttons.length - 1].focus();
       }
     });
-  });
-
-  // Ao voltar para o desktop sem nenhuma resposta aberta, abre a primeira.
-  desktop.addEventListener("change", (e) => {
-    if (e.matches && !buttons.some((b) => b.getAttribute("aria-expanded") === "true")) set(buttons[0], true);
   });
 }
