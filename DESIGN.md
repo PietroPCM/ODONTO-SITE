@@ -1,45 +1,58 @@
 ---
-name: Dra. Aline Sanfelice — Odontopediatria Avançada
-description: Personal-brand site for a pediatric dentist in Cascavel; her consulting room rendered as a page.
+name: Dra. Aline Sanfelice, Odontopediatria Avançada
+description: Pediatric dentistry personal-brand site; white ground, fields tinted from the official rainbow logo, Azul Aline for the voice.
 colors:
-  azul: "#0f4e70"
+  azul-aline: "#0f4e70"
   azul-profundo: "#0b3a54"
-  azul-claro: "#d8e6ee"
-  grafite: "#2b2d3a"
-  grafite-suave: "#555869"
-  lilas: "#c3bde3"
-  lilas-tinta: "#5f5893"
-  arco-rosa: "#f2bfb3"
-  arco-amarelo: "#efdcae"
-  arco-menta: "#a8d5bf"
-  arco-azul: "#acd5dc"
-  parede: "#f9f8fb"
-  nevoa: "#f0eef6"
-  linha: "#dedbe8"
+  azul-claro: "#dcebf2"
+  rosa: "#fbb5b7"
+  amarelo: "#fef4ae"
+  verde: "#a9d3b7"
+  azul-faixa: "#add8ed"
+  lilas: "#e6cbfc"
+  dente: "#fdd6e2"
+  rosa-50: "#fff1f1"
+  amarelo-50: "#fffbe8"
+  verde-50: "#edf7f0"
+  azul-faixa-50: "#eef7fc"
+  lilas-50: "#f7f0fe"
+  estrela: "#e4a630"
+  tinta: "#1f2a37"
+  tinta-suave: "#556170"
   branco: "#ffffff"
+  fundo-suave: "#faf7fe"
+  linha: "#ebe4f3"
 typography:
   display:
-    fontFamily: "Young Serif, Young Serif Fallback, Georgia, serif"
-    fontSize: "clamp(2.9rem, 2rem + 4.2vw, 6rem)"
-    fontWeight: 400
-    lineHeight: 0.98
-    letterSpacing: "-0.02em"
-  headline:
-    fontFamily: "Young Serif, Young Serif Fallback, Georgia, serif"
-    fontSize: "clamp(2.2rem, 1.8rem + 2vw, 3.5rem)"
-    fontWeight: 400
-    lineHeight: 1.06
+    fontFamily: "Bricolage Grotesque, Display Fallback, Helvetica Neue, Arial, sans-serif"
+    fontSize: "clamp(2.45rem, 1.55rem + 3.9vw, 4.6rem)"
+    fontWeight: 760
+    lineHeight: 1.05
     letterSpacing: "-0.012em"
+    fontVariation: "\"opsz\" 48"
+  headline:
+    fontFamily: "Bricolage Grotesque, Display Fallback, Helvetica Neue, Arial, sans-serif"
+    fontSize: "clamp(1.75rem, 1.45rem + 1.4vw, 2.6rem)"
+    fontWeight: 750
+    lineHeight: 1.1
+    letterSpacing: "-0.018em"
   title:
-    fontFamily: "Young Serif, Young Serif Fallback, Georgia, serif"
-    fontSize: "clamp(1.4rem, 1.27rem + 0.6vw, 1.75rem)"
-    fontWeight: 400
+    fontFamily: "Bricolage Grotesque, Display Fallback, Helvetica Neue, Arial, sans-serif"
+    fontSize: "clamp(1.3rem, 1.2rem + 0.5vw, 1.6rem)"
+    fontWeight: 750
     lineHeight: 1.15
+    letterSpacing: "-0.02em"
+  quote:
+    fontFamily: "Bricolage Grotesque, Display Fallback, Helvetica Neue, Arial, sans-serif"
+    fontSize: "clamp(1.3rem, 1.2rem + 0.5vw, 1.6rem)"
+    fontWeight: 600
+    lineHeight: 1.32
+    letterSpacing: "-0.01em"
   lead:
     fontFamily: "Figtree, Figtree Fallback, Helvetica Neue, Arial, sans-serif"
-    fontSize: "clamp(1.15rem, 1.09rem + 0.3vw, 1.3rem)"
+    fontSize: "clamp(1.1rem, 1.05rem + 0.3vw, 1.25rem)"
     fontWeight: 400
-    lineHeight: 1.5
+    lineHeight: 1.55
   body:
     fontFamily: "Figtree, Figtree Fallback, Helvetica Neue, Arial, sans-serif"
     fontSize: "clamp(1rem, 0.97rem + 0.15vw, 1.0625rem)"
@@ -48,207 +61,229 @@ typography:
   label:
     fontFamily: "Figtree, Figtree Fallback, Helvetica Neue, Arial, sans-serif"
     fontSize: "clamp(0.84rem, 0.82rem + 0.1vw, 0.9rem)"
-    fontWeight: 400
-    lineHeight: 1.45
+    fontWeight: 650
+    lineHeight: 1.3
 rounded:
-  s: "6px"
+  sm: "14px"
+  md: "22px"
+  lg: "32px"
   pill: "999px"
-  arch: "999px 999px 0 0"
-  doorway: "999px 999px 4px 4px"
 spacing:
   xs: "0.5rem"
   s: "1rem"
   m: "clamp(1.5rem, 1.2rem + 1vw, 2rem)"
-  l: "clamp(2.5rem, 2rem + 2vw, 4rem)"
-  xl: "clamp(4.5rem, 3rem + 6vw, 9rem)"
+  l: "clamp(2.25rem, 1.8rem + 2vw, 3.5rem)"
+  xl: "clamp(4rem, 3rem + 4vw, 7rem)"
   gutter: "clamp(1rem, 0.6rem + 2vw, 2.5rem)"
 components:
   button-primary:
-    backgroundColor: "{colors.azul}"
+    backgroundColor: "{colors.azul-aline}"
     textColor: "{colors.branco}"
-    typography: "{typography.body}"
-    rounded: "{rounded.doorway}"
-    padding: "0.9rem 1.75rem 0.85rem"
-    height: "56px"
+    rounded: "{rounded.pill}"
+    padding: "0.85rem 1.5rem"
+    height: "52px"
   button-primary-hover:
     backgroundColor: "{colors.azul-profundo}"
     textColor: "{colors.branco}"
-  button-light:
+  button-outline:
     backgroundColor: "{colors.branco}"
-    textColor: "{colors.azul}"
-    typography: "{typography.lead}"
-    rounded: "{rounded.doorway}"
-    padding: "0.9rem 2rem 0.85rem"
-    height: "64px"
-  button-light-hover:
-    backgroundColor: "{colors.azul-claro}"
-    textColor: "{colors.azul}"
-  link-arrow:
-    textColor: "{colors.azul}"
-    typography: "{typography.body}"
-    height: "44px"
-  nav-link:
-    textColor: "{colors.grafite}"
-    padding: "0.5rem 0"
-  nav-link-active:
-    textColor: "{colors.azul}"
-  dock:
-    backgroundColor: "{colors.azul}"
+    textColor: "{colors.azul-aline}"
+    rounded: "{rounded.pill}"
+    padding: "0.85rem 1.5rem"
+    height: "52px"
+  card-field:
+    backgroundColor: "{colors.rosa-50}"
+    textColor: "{colors.tinta-suave}"
+    rounded: "{rounded.md}"
+    padding: "{spacing.m}"
+  card-feature:
+    backgroundColor: "{colors.azul-aline}"
     textColor: "{colors.branco}"
-    rounded: "999px 999px 8px 8px"
-    padding: "0.5rem 0.6rem 0.45rem 1.5rem"
-    height: "62px"
+    rounded: "{rounded.md}"
+    padding: "{spacing.l}"
+  card-review-feature:
+    backgroundColor: "{colors.lilas-50}"
+    textColor: "{colors.azul-aline}"
+    typography: "{typography.quote}"
+    rounded: "{rounded.md}"
+    padding: "{spacing.l}"
+  info-card:
+    backgroundColor: "{colors.branco}"
+    textColor: "{colors.tinta-suave}"
+    rounded: "{rounded.sm}"
+    padding: "0.8rem 1rem"
+  step-stop:
+    textColor: "{colors.azul-aline}"
+    rounded: "{rounded.pill}"
+    size: "46px"
+  faq-item:
+    backgroundColor: "{colors.branco}"
+    textColor: "{colors.tinta}"
+    rounded: "{rounded.md}"
+    padding: "1rem 1.25rem"
+    height: "64px"
+  photo-caption:
+    backgroundColor: "{colors.branco}"
+    textColor: "{colors.azul-aline}"
+    rounded: "{rounded.pill}"
+    padding: "0.35rem 0.8rem"
 ---
 
-# Design System: Dra. Aline Sanfelice
+# Design System: Dra. Aline Sanfelice, Odontopediatria Avançada
 
 ## Overview
 
-**Creative North Star: "The Room of Arches"**
+**Creative North Star: "The Rainbow on White"**
 
-The page is her consulting room. A generous sign-wall white carries almost everything; one navy, Azul Aline, signs the name, the headings, the action and the links; photography of her and her real clinic is the protagonist. The arch of the clinic wall is the system's one geometric idea, and it is spent sparingly: it frames her portrait and the facade, it tops the primary action, and it returns as the five thin arcs of her rainbow logo.
+The system is built from one supplied object: Dra. Aline's official rainbow logo. Its five bands (rosa, amarelo, verde, a dashed azul band, lilás) and the pink tooth at its centre are measured from the logo file and reused at two strengths: full strength as small accents and stops, and as near-white `-50` tints that become section and card fields. Everything that speaks (headings, primary actions, key numbers) is one strong colour, Azul Aline. The ground is white.
 
-Density is calm and editorial. Sections breathe on a fluid vertical rhythm (up to 9rem), content sits on a 12-column grid that lets photos bleed to the viewport edge while text holds a 62ch measure. Structure is drawn with 1px lines rather than boxes: facts, steps, questions and reviews are separated by hairlines, never enclosed in cards. Colour is restrained to the point of rarity; the logo pastels never fill a surface.
+The register is the category standard for a premium pediatric practice, executed with care: real photography of the doctor and the clinic, rounded cards, pill buttons, soft navy-tinted shadows, a friendly grotesque for headings and a clean, round sans for reading. It is warm and clear for parents, who are the readers, and it is not infantile. It also refuses the editorial look (cream ground, serif display, hairline rules).
 
-The world refuses the category default of a split hero with pills, card grids and pastel everywhere (direction contract, confirmed by the user).
+Density is relaxed. Sections breathe on a fluid vertical rhythm, and white sections alternate with a faint lilac-white tint so the long single page reads as distinct rooms.
 
 **Key Characteristics:**
-- White wall ground, one strong navy, graphite ink.
-- Arch geometry: portrait and facade frames, arch-topped actions, the logo arcs.
-- Lines instead of containers; no cards.
-- Serif display in navy at large sizes; plain humanist sans for everything read.
-- Motion is slow and settling (one expo-out curve), never bouncy.
+- White ground; logo-derived pastel fields (`-50` tints) for hero, closing, cards and avatars.
+- Azul Aline as the only strong colour; every heading and primary action uses it.
+- The logo's dashed azul band reappears as a structural device (first-visit rail, hero arc).
+- Rounded geometry at three radii plus pill; soft, navy-tinted shadows.
+- Real photos only, in large rounded frames.
 
 ## Colors
 
-A white-wall palette signed by a single deep petrol navy, with the logo's pastels held back to hairline arcs.
+A white page voiced in one deep blue, coloured by the soft bands of the official logo.
 
 ### Primary
-- **Azul Aline** (azul): the only strong colour. Display and section titles, primary buttons, inline links, focus ring, the 1px rule the primary action sits on, the drenched sedation section and the closing section.
-- **Deep Azul** (azul-profundo): hover/pressed state of navy actions and the footer ground, one step darker than the closing so the page ends in the darkest navy.
-- **Mist Blue** (azul-claro): body text on navy fields, and the hover fill of the light button.
+- **Azul Aline** (`azul-aline`): every heading, the primary button, the mobile booking dock, the feature service card, the gallery quote tile, focus rings, link colour. The single strong voice of the page.
+- **Azul Profundo** (`azul-profundo`): hover state of primary actions and the dock's shadow tint. Never a surface of its own.
+- **Azul Claro** (`azul-claro`): secondary text on Azul Aline surfaces (feature card copy, quote attribution).
 
 ### Secondary
-- **Sign Lilac** (lilas): the letters of the wall sign. Decorative only: oversized opening quote marks, the active/hover nav underline, the arc bullets in the sedation list, text selection, scrollbar thumb. Never used for text.
-- **Lilac Ink** (lilas-tinta): the legible lilac for small text (review context lines).
+- **Rosa, Amarelo, Verde, Azul da Faixa, Lilás** (`rosa`, `amarelo`, `verde`, `azul-faixa`, `lilas`): the five official logo bands, measured from the logo file. Full strength only in small, deliberate doses: the five numbered stops of the first-visit rail (one band each, in logo order), the rainbow arc behind the hero portrait, the highlighter stroke under the hero's key phrase (amarelo), bullet dots in the feature card (verde), the dashed rail (azul-faixa), text selection, scrollbar and avatar ring (lilás).
+- **Dente** (`dente`): the pink of the tooth inside the logo. Part of the official palette; it lives in the logo artwork and has no surface role in the shipped page.
 
 ### Tertiary
-- **Logo Rainbow** (arco-rosa, arco-amarelo, arco-menta, arco-azul, plus lilas as the fifth arc): blush, butter, mint and powder blue (dashed) from the logo. They appear only as stroked arcs: the lockup mark, the five journey arcs, and the small arc above each journey step number.
+- **The logo fields** (`rosa-50`, `amarelo-50`, `verde-50`, `azul-faixa-50`, `lilas-50`): the bands diluted to near-white. They are fields, not accents: hero and closing ground (lilás-50), the doctor's quote card (rosa-50), service cards (verde-50, rosa-50), the large review (lilás-50), icon discs and review avatars (cycled through all five).
+- **Estrela** (`estrela`): Google rating stars only.
 
 ### Neutral
-- **Sign Wall** (parede): dominant page ground and header ground.
-- **Mist Lavender** (nevoa): the alternating section ground (journey, families) and the placeholder behind arch-framed photos.
-- **Graphite** (grafite): body ink, measured from the facade.
-- **Soft Graphite** (grafite-suave): secondary text, fact labels, captions (5.9:1 on the ground).
-- **Hairline** (linha): every structural divider on light grounds.
-- **White** (branco): text and the light button on navy fields.
+- **Tinta** (`tinta`): body text and the strong names inside meta lines.
+- **Tinta Suave** (`tinta-suave`): leads, descriptions, captions, footer text.
+- **Branco** (`branco`): page ground, cards on tinted sections, header, footer.
+- **Fundo Suave** (`fundo-suave`): the alternating section tint and the place card.
+- **Linha** (`linha`): every divider and inset card stroke (1px dividers, 1.5px inset rings).
 
 ### Named Rules
-**The One Strong Colour Rule.** Azul Aline is the only saturated colour on any screen. A second accent never appears; emphasis comes from size and the serif, not from another hue.
+**The One Voice Rule.** Only Azul Aline speaks. Headings, primary buttons and key numbers are Azul Aline; the rainbow colours never carry text and never fill a button.
 
-**The Thin Rainbow Rule.** The logo pastels exist only as stroked arcs (2-5px). They never fill a block, a button, a background or a card.
+**The Field, Not Fill Rule.** A rainbow colour covers a large area only as its `-50` tint. Full-strength bands stay small: stops, dots, strokes, arcs.
+
+**The Measured Palette Rule.** The rainbow values are the logo's own colours. Do not shift or saturate them, and do not add a sixth hue.
 
 ## Typography
 
-**Display Font:** Young Serif (with a metric-adjusted Georgia fallback)
-**Body Font:** Figtree, variable 300-800 (with a metric-adjusted Arial fallback)
+**Display Font:** Bricolage Grotesque (variable, 500-800, self-hosted; metric-adjusted Arial fallback)
+**Body Font:** Figtree (variable, 300-800, self-hosted; metric-adjusted Arial fallback)
 
-**Character:** A soft, slightly bookish serif at weight 400 carries her name and every heading in navy; Figtree does all the reading and the labels in graphite, plain and warm. Both are self-hosted woff2.
+**Character:** Bricolage brings a friendly, slightly characterful grotesque warmth to headings without looking childish; Figtree is round, open and calm for parents reading on a phone.
 
 ### Hierarchy
-- **Display** (400, clamp(2.9rem → 6rem), 0.98, -0.02em): her name in the hero only, the "Dra." set at 0.46em on the same line. The closing headline uses the step-5 size (up to 6rem, 1.02).
-- **Headline** (400, step-4 up to 3.5rem, 1.06, -0.012em): section titles in navy, capped at 17ch.
-- **Title** (400, step-2 up to 1.75rem, 1.15): journey step titles, step numerals, mobile menu links, answer text in the questions section (step-3 on desktop). Pull quotes run larger in the same face (up to 3.1rem, 1.3).
-- **Lead** (Figtree 400, step-1 up to 1.3rem, 1.5): the hero promise and section intros, 34-40ch.
-- **Body** (Figtree 400, step-0 up to 1.0625rem, 1.6): running text at a 62ch measure. Facts and values use 500; buttons and links use 600; names in reviews and team use 700.
-- **Label** (Figtree 400, step--1 up to 0.9rem, 1.45): fact terms, captions, attributions in Soft Graphite. Sentence case, no tracking.
+- **Display** (760, fluid up to 4.6rem, 1.05, optical size 48): hero headline; the closing headline uses the same treatment at the step-4 size (up to 4.5rem). Max about 12-16ch.
+- **Headline** (750, up to 2.6rem, 1.1): section titles, always Azul Aline, balanced wrap.
+- **Title** (700-750, step-2 or 1.25rem, 1.15-1.2): service card titles, step titles, trust-strip lead words.
+- **Quote** (600-650, step-2, about 1.3): testimonials and the doctor's quote set in the display face, Azul Aline (white on the Azul Aline quote tile). Feature quotes grow to about 2.1-2.6rem on desktop.
+- **Lead** (400, step-1, 1.55, 40-46ch): hero and section leads in Tinta Suave.
+- **Body** (400, step-0, 1.6, measure 60ch).
+- **Label** (650, 0.82-0.95rem): small buttons, photo captions, footer labels. Sentence case.
 
 ### Named Rules
-**The Serif Speaks For Her Rule.** Young Serif is reserved for her name, section titles, step titles, quotes and her answers. Anything a parent scans for logistics (facts, labels, buttons, navigation on desktop) is Figtree.
+**The Display-Face-For-Voices Rule.** Bricolage is for headings and for quoted human voices (testimonials, the doctor's words). Running text, buttons and UI stay in Figtree.
 
-**The Sentence Case Rule.** No uppercase, no tracked-out labels anywhere in the build. Hierarchy comes from size, face and colour.
+**The Title-First Rule.** A section opens with its title. No uppercase labels, eyebrows or kickers above headings.
 
 ## Layout
 
-Mobile-first with breakpoints at 600px (tablet), 760px (team and footer columns), 960px (desktop grid, full nav) and 1280px (hero portrait narrows). Content is centered in a 1320px max container with a fluid gutter (1rem to 2.5rem). On desktop every section uses a 12-column grid with gutter-width column gaps; layouts are deliberately asymmetric (text 1-6 against image 7-12, or image 1-5 against text 7-12), and photos may bleed past the container to the viewport edge on one side, losing their radius on that edge.
+Single-column, mobile-first page inside a 1240px container with a fluid gutter (`gutter`). Sections use `xl` vertical padding; section heads (max 44rem) sit `l` above their content. Backgrounds alternate white and Fundo Suave (first visit, clinic gallery and FAQ are tinted); the hero and the closing sit on Lilás 50.
 
-Vertical rhythm comes from a five-step fluid scale: xs 0.5rem, s 1rem, m up to 2rem, l up to 4rem, xl up to 9rem. Sections pad by xl top and bottom; groups inside a section separate by l; items by s or m. Reading text holds 62ch; leads 34-40ch; display quotes 24-30ch. Light sections alternate Sign Wall and Mist Lavender grounds; the story then moves to navy for sedation, returns to white, and ends in navy closing plus deeper-navy footer.
+Breakpoints: 600px (hero info cards appear, hero buttons stop stretching), 760px (two-column grids), 960px (hero, about, FAQ, place and gallery go two-column or bento), 1080px (desktop navigation, five-column steps, three-column service and review bentos).
 
-A sticky 68px header on the wall ground gains a single hairline once the page scrolls. On phones a fixed WhatsApp dock rises from the bottom after the hero leaves view; it is hidden at 960px and up.
+Recurring compositions:
+- **Hero:** text left, portrait right on desktop; on mobile the photo comes first in a landscape crop. The trust strip overlaps the hero's base.
+- **Bento grids:** services (one tall Azul Aline feature card spanning two rows, tinted cards, a wide team card); reviews (one large Lilás 50 review spanning two columns and two rows); gallery (the treatment room as the large tile spanning three columns and two rows, two square tiles stacked beside it, an Azul Aline quote tile on the bottom row).
+- **Sticky intro:** the FAQ intro sticks beside the list on desktop.
 
 ## Elevation & Depth
 
-The system is flat. Depth is carried by ground changes (white, lavender mist, navy) and by 1px lines. Shadows are rare, soft and tinted navy rather than grey, and are tied to the action: the primary button and the mobile dock. The header and menus use a hairline or a soft drop only when they float over content.
+A hybrid: most surfaces are flat colour fields, and white cards that float over photos or tinted ground carry soft, diffuse shadows tinted with Azul Aline rather than grey. Cards resting on white use a 1.5px inset Linha ring instead of a shadow.
 
 ### Shadow Vocabulary
-- **Action lift** (`box-shadow: 0 18px 40px -24px rgba(15, 78, 112, 0.35)`): resting primary button.
-- **Action lift, hover** (`box-shadow: 0 22px 44px -24px rgba(15, 78, 112, 0.55)`): primary button hover.
-- **Dock lift** (`box-shadow: 0 18px 36px -16px rgba(11, 58, 84, 0.55)`): the floating mobile WhatsApp dock.
-- **Menu drop** (`box-shadow: 0 24px 40px -28px rgba(43, 45, 58, 0.35), 0 1px 0 #dedbe8 inset`): the open mobile menu sheet.
-- **Header hairline** (`box-shadow: 0 1px 0 #dedbe8`): the sticky header once scrolled.
+- **Card** (`box-shadow: 0 1px 2px rgba(15, 78, 112, 0.06), 0 14px 34px -16px rgba(15, 78, 112, 0.22)`): hero info cards, photo badge, rating card, FAQ items.
+- **Float** (`box-shadow: 0 2px 4px rgba(15, 78, 112, 0.06), 0 24px 48px -20px rgba(15, 78, 112, 0.35)`): hero portrait, the overlapping trust strip, the mobile menu panel.
+- **Primary lift** (`box-shadow: 0 10px 24px -12px rgba(15, 78, 112, 0.7)`; hover `0 16px 30px -14px rgba(15, 78, 112, 0.8)`): under the primary button.
+- **Inset ring** (`box-shadow: inset 0 0 0 1.5px #ebe4f3`): outline buttons, review cards, team card.
 
 ### Named Rules
-**The Lines Not Boxes Rule.** Group content with a 1px top rule (Hairline on light, translucent white or lilac on navy), never with a bordered or shadowed card.
+**The Navy Shadow Rule.** Shadows are tinted with Azul Aline, soft and negatively spread. No grey or black shadows, no hard offsets.
 
 ## Shapes
 
-Two shape ideas, both from the clinic: the arch and the straight line it stands on.
+Rounded throughout, in three steps plus pill: gently rounded (`sm`) for small floating info cards, the photo badge and menu links; rounded (`md`) for cards, gallery tiles, FAQ items, the trust strip and the map; soft-large (`lg`) for big photo frames and the place card; pill for every button, the nav toggle, caption chips and desktop nav links. Circles for step stops, avatars and icon discs; service icon tiles use 16px.
 
-- **Arch frame** (999px 999px 0 0): a full semicircular top with straight sides and a flat base. Used only on the hero portrait and the facade photo.
-- **Doorway** (999px 999px 4px 4px): the primary and light buttons. Round top, near-flat base.
-- **Small arcs**: 2-3px stroked half-rings (12-22px wide) as list bullets on navy and as markers above journey step numerals, coloured from the rainbow or lilac.
-- **Soft rectangle** (6px): every other photo and the map embed. Where a photo bleeds to the viewport edge, the bleeding side drops to 0.
-- **Circle**: only the WhatsApp icon well inside the dock.
-
-### Named Rules
-**The Two Arches Rule.** The full arch frame belongs to the hero portrait and the facade. Other photos are soft rectangles; adding a third arch frame dilutes the signature.
-
-**The Doorway Rule.** A primary action is an arch-topped doorway set into a line: its flat base overlaps (-1px) a full-width 1px rule (navy on light grounds, white on navy), the rule that also tops the facts beneath it.
+The logo's arc and dashed band are the only recurring geometry: the five-band rainbow arc (azul band dashed) behind the hero portrait on desktop, and the dashed first-visit rail.
 
 ## Components
 
 ### Buttons
-Calm, architectural, one per moment.
-- **Shape:** doorway, round top and near-flat base (999px 999px 4px 4px); min height 56px, 64px for the large closing variant.
-- **Primary:** Azul Aline fill, white Figtree 600 text, leading inline SVG icon (1.25em) with a 0.6rem gap, action-lift shadow. Seated on a 1px navy rule.
-- **Light:** white fill, navy text, used only on navy grounds (closing), seated on a 1px white rule.
-- **Hover / Focus:** primary deepens to Deep Azul and the shadow grows; light fills Mist Blue; 0.25s colour / 0.35s shadow on the expo-out curve; active presses 1px down. Focus is a 2px navy outline at 3px offset (white on navy grounds). Hover effects are gated behind `(hover: hover)`.
-- **On phones** the primary button goes full width and the secondary link is reordered above it so the button lands directly on its rule.
+Confident, rounded and simple.
+- **Shape:** full pill, min height 52px (44px small, 58px large).
+- **Primary:** Azul Aline fill, white Figtree 650, padding 0.85rem 1.5rem, navy lift shadow.
+- **Hover / Focus:** hover deepens to Azul Profundo and rises 1px with a stronger shadow; active presses 1px down; focus shows a 2.5px Azul Aline outline offset 3px. Transitions use `cubic-bezier(0.16, 1, 0.3, 1)` at 0.25-0.35s.
+- **Outline:** white fill, Azul Aline text, 1.5px inset Linha ring that turns Azul Aline on hover. Used for phone and route actions beside a primary.
+- **Arrow link:** Azul Aline 650 text with a 30% underline that firms on hover while the arrow nudges 3px right.
 
-### Link with arrow
-The secondary action everywhere: navy Figtree 600, 1px underline at 35% navy that darkens to full on hover, trailing arrow that nudges 3px (down for in-page anchors). Min height 44px. A white variant serves navy grounds.
+### Cards / Containers
+- **Corner Style:** `md` for content cards, `sm` for small floating cards, `lg` for photo frames.
+- **Background:** a logo `-50` field, white with an inset ring, or one Azul Aline feature card per bento.
+- **Shadow Strategy:** floating white cards take Card; resting cards take the inset ring (see Elevation).
+- **Internal Padding:** `m`, growing to `l` for the feature tile of a bento.
 
 ### Navigation
-Desktop: Figtree 500 at 0.95rem in Graphite, a 1.5px underline that appears in Sign Lilac on hover and for the current section while the text turns navy. A hairline-separated WhatsApp text link closes the bar. Mobile: a "Menu" toggle with a two-line icon that crosses; the sheet drops from under the header with links set in Young Serif at title size in navy.
+Sticky white header (76px) with the official horizontal logo lockup on the left (58px tall, 48px on small screens), pill text links in Figtree 550 that gain a Fundo Suave fill on hover or when current, and a small primary WhatsApp button. Once scrolled the header gains a Linha hairline and a soft navy shadow. Below 1080px a pill "Menu" toggle opens a floating white panel (`md` radius, Float shadow).
 
-### Fact lists
-Definition lists of where, when and rating: Soft Graphite label terms at label size, Graphite 500 values, navy links. On the hero they sit under the navy doorway rule; on the closing under a white rule in three columns.
+### Trust Strip
+Text only: four short Azul Aline lead words in the display face, each with a Tinta Suave qualifier beneath, separated by 1px Linha dividers (vertical on desktop, horizontal on mobile). A white, Float-shadowed band overlapping the hero base. No icons.
 
-### Questions (accordion / master-detail)
-Questions are Figtree 600 at lead size between hairlines; the open one turns navy. Mobile: chevron accordion with the answer below. Desktop: questions in a left 5fr column, the active answer shown in a right 7fr column behind a hairline, set in Young Serif navy at step-3, with a doubled navy top rule marking the open question.
+### First-Visit Rail
+The logo's dashed azul band becomes the path of the first consultation: a 3px dashed Azul da Faixa line connecting five 46px numbered circles, each filled with one logo band in logo order (rosa, amarelo, verde, azul, lilás), numbers in Bricolage 800 Azul Aline. Horizontal across five columns on desktop, vertical along the left edge on mobile.
 
-### Quotes and reviews
-Her quote and the featured review sit in Young Serif navy under an oversized lilac opening quote mark. Other reviews are lead-size Figtree under a hairline, attributed as bold first name, a dot, and context in Lilac Ink.
+### Reviews Bento
+White cards with an inset ring and a round initial avatar on a cycling `-50` tint; one large Lilás 50 review set in the display face as the feature. A white rating card with a 3rem Bricolage score and Estrela stars sits beside the heading.
 
-### Journey arcs (signature)
-The five logo arcs (blush, butter, mint, dashed powder blue, lilac; 5px round strokes) over a navy tooth outline. When the illustration is 70% in view, the arcs draw in sequence, one every 320ms over 1.2s each, matching the five steps, then the tooth settles in. Without JS or with reduced motion all five arcs are drawn from the start. Each step repeats its arc colour as a small half-ring above its serif numeral.
+### Gallery
+Real clinic photos in `md` tiles with a white pill caption chip at bottom left; the treatment room is the large tile. A slow 1.04 zoom on hover.
 
-### Mobile dock
-A fixed navy bar 12px from the screen edges with a doorway top (999px 999px 8px 8px), WhatsApp title and meta line, and a white circular icon well. It slides up on the expo-out curve.
+### FAQ Accordion
+White `md` items with the Card shadow, Figtree 650 questions, and a circular Lilás 50 plus that rotates into a close mark and turns full Lilás when open.
+
+### Closing and Footer
+The closing sits on Lilás 50 with the full transparent official logo centred above a Display headline and primary plus outline actions. The footer is light: white, a Linha top border, the horizontal logo lockup and two short link columns.
+
+### Mobile Booking Dock
+A full-width Azul Aline pill (56px) fixed at the bottom on phones, shown only while neither the hero nor the closing is in view.
 
 ## Do's and Don'ts
 
 ### Do:
-- **Do** keep Sign Wall (#f9f8fb) as the dominant ground and Azul Aline (#0f4e70) as the only strong colour.
-- **Do** seat every primary action on a 1px full-width rule with the button overlapping it by 1px.
-- **Do** separate groups with 1px rules in Hairline (#dedbe8) and let the 12-column grid set asymmetric text/image pairs.
-- **Do** set her name, titles and her answers in Young Serif 400 navy, and everything logistical in Figtree.
-- **Do** use the expo-out curve (cubic-bezier(0.16, 1, 0.3, 1)) for all motion and honour reduced motion by showing the final state.
-- **Do** use real photos of her and the clinic as the protagonist, with alt text describing the scene.
+- **Do** use the official logo files as supplied: the horizontal lockup in header and footer, the full transparent logo in the closing.
+- **Do** set every heading and primary action in Azul Aline and keep body text in Tinta.
+- **Do** use the logo bands as `-50` fields for large areas, and at full strength only for small marks (stops, dots, strokes, arcs).
+- **Do** keep the five bands in logo order whenever they appear together, with the azul band dashed.
+- **Do** round everything (14 / 22 / 32px, pill buttons) and keep shadows soft and navy-tinted.
+- **Do** use real photographs of Dra. Aline and the clinic in large rounded frames.
 
 ### Don't:
-- **Don't** use the logo pastels as fills, backgrounds, buttons or cards; they are stroked arcs only.
-- **Don't** add a third arch-framed photo; arch frames are the hero portrait and the facade.
-- **Don't** put content in bordered or shadowed cards, or build pill-chip rows and card grids.
-- **Don't** set text in Sign Lilac (#c3bde3); use Lilac Ink (#5f5893) when lilac text is needed.
-- **Don't** introduce uppercase or letter-spaced labels; the system is sentence case throughout.
+- **Don't** set text or fill buttons in the rainbow colours.
+- **Don't** use a cream ground, a serif display face or hairline-only editorial layouts.
+- **Don't** go infantile: no saturated primary-colour toy palette, no "escolinha" decoration.
+- **Don't** add uppercase eyebrows or kickers above section titles.
+- **Don't** use grey or black shadows, or hard offset shadows.
+- **Don't** redraw, recolour or re-letter the logo.

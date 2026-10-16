@@ -1,492 +1,571 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-16T15:08:26+00:00",
-  "title": "Design System: Dra. Aline Sanfelice",
+  "generatedAt": "2026-10-16T16:19:54+00:00",
+  "title": "Design System: Dra. Aline Sanfelice, Odontopediatria Avançada",
   "extensions": {
     "colorMeta": {
-      "azul": {
+      "azul-aline": {
         "role": "primary",
         "displayName": "Azul Aline",
         "canonical": "#0f4e70",
-        "cssVar": "--azul",
+        "oklch": "oklch(40.4% 0.083 238.5)",
         "tonalRamp": [
-          "#000c25",
-          "#002744",
-          "#034565",
-          "#2d6485",
-          "#5284a4",
-          "#76a5c4",
-          "#9fcbe8",
-          "#cdf5ff"
-        ]
+          "#000c23",
+          "#002a4a",
+          "#094a6c",
+          "#336c90",
+          "#5790b6",
+          "#7bb6dd",
+          "#9ed9ff",
+          "#c1f7ff"
+        ],
+        "cssVar": "--azul"
       },
       "azul-profundo": {
         "role": "primary",
-        "displayName": "Deep Azul",
+        "displayName": "Azul Profundo",
         "canonical": "#0b3a54",
-        "cssVar": "--azul-profundo",
+        "oklch": "oklch(33.2% 0.067 238.5)",
         "tonalRamp": [
-          "#000d21",
-          "#00273f",
-          "#19445e",
-          "#3c637c",
-          "#5e829b",
-          "#81a4bb",
-          "#a9c9e0",
-          "#d6f3ff"
+          "#000c23",
+          "#002a43",
+          "#1e4a65",
+          "#406c88",
+          "#638fad",
+          "#87b5d4",
+          "#a9d8f8",
+          "#c6f6ff"
         ]
       },
       "azul-claro": {
         "role": "primary",
-        "displayName": "Mist Blue",
-        "canonical": "#d8e6ee",
-        "cssVar": "--azul-claro",
+        "displayName": "Azul Claro",
+        "canonical": "#dcebf2",
+        "oklch": "oklch(93.1% 0.019 227.3)",
         "tonalRamp": [
-          "#070c0f",
-          "#1f2529",
-          "#394145",
-          "#565f64",
-          "#757f85",
-          "#95a0a7",
-          "#bac6ce",
-          "#e3f1f9"
+          "#040d11",
+          "#1d282e",
+          "#3b474d",
+          "#5b686e",
+          "#7e8c92",
+          "#a2b1b7",
+          "#c5d4db",
+          "#e2f1f8"
         ]
+      },
+      "rosa": {
+        "role": "secondary",
+        "displayName": "Rosa do Logo",
+        "canonical": "#fbb5b7",
+        "oklch": "oklch(83.9% 0.082 17.1)",
+        "tonalRamp": [
+          "#220002",
+          "#461017",
+          "#6a3135",
+          "#8f5255",
+          "#b57577",
+          "#dd999b",
+          "#ffbcbe",
+          "#ffe5e5"
+        ]
+      },
+      "amarelo": {
+        "role": "secondary",
+        "displayName": "Amarelo do Logo",
+        "canonical": "#fef4ae",
+        "oklch": "oklch(95.9% 0.089 101.0)",
+        "tonalRamp": [
+          "#140900",
+          "#302600",
+          "#504600",
+          "#716723",
+          "#958b48",
+          "#bab06c",
+          "#ddd38e",
+          "#fbf1ab"
+        ]
+      },
+      "verde": {
+        "role": "secondary",
+        "displayName": "Verde do Logo",
+        "canonical": "#a9d3b7",
+        "oklch": "oklch(82.9% 0.059 155.7)",
+        "tonalRamp": [
+          "#001202",
+          "#062f1a",
+          "#294e37",
+          "#4a7058",
+          "#6c947a",
+          "#90ba9e",
+          "#b3ddc1",
+          "#d0fbde"
+        ],
+        "cssVar": "--menta"
+      },
+      "azul-faixa": {
+        "role": "secondary",
+        "displayName": "Azul da Faixa (tracejada)",
+        "canonical": "#add8ed",
+        "oklch": "oklch(85.9% 0.054 229.2)",
+        "tonalRamp": [
+          "#000e1d",
+          "#002b3b",
+          "#234a5c",
+          "#446c7f",
+          "#6790a3",
+          "#8bb5c9",
+          "#add8ed",
+          "#caf6ff"
+        ],
+        "cssVar": "--ceu"
       },
       "lilas": {
         "role": "secondary",
-        "displayName": "Sign Lilac",
-        "canonical": "#c3bde3",
-        "cssVar": "--lilas",
+        "displayName": "Lilás do Logo",
+        "canonical": "#e6cbfc",
+        "oklch": "oklch(88.0% 0.072 309.7)",
         "tonalRamp": [
-          "#0c0817",
-          "#242134",
-          "#403c53",
-          "#5e5974",
-          "#7e7997",
-          "#9f99bb",
-          "#c4bee4",
-          "#efe9ff"
+          "#140121",
+          "#311b40",
+          "#513962",
+          "#735a85",
+          "#967daa",
+          "#bca2d1",
+          "#dfc5f5",
+          "#fde2ff"
         ]
       },
-      "lilas-tinta": {
+      "dente": {
         "role": "secondary",
-        "displayName": "Lilac Ink",
-        "canonical": "#5f5893",
-        "cssVar": "--lilas-tinta",
+        "displayName": "Rosa do Dente",
+        "canonical": "#fdd6e2",
+        "oklch": "oklch(91.2% 0.046 357.6)",
         "tonalRamp": [
-          "#0c0327",
-          "#231b48",
-          "#3e376a",
-          "#5b548e",
-          "#7a75af",
-          "#9b97cf",
-          "#c1bdf3",
-          "#ebe8ff"
+          "#19030b",
+          "#381c26",
+          "#593b45",
+          "#7c5b66",
+          "#a17e89",
+          "#c7a2ae",
+          "#ebc5d1",
+          "#ffe4ee"
         ]
       },
-      "arco-rosa": {
+      "rosa-50": {
         "role": "tertiary",
-        "displayName": "Rainbow Blush",
-        "canonical": "#f2bfb3",
-        "cssVar": "--arco-rosa",
+        "displayName": "Campo Rosa",
+        "canonical": "#fff1f1",
+        "oklch": "oklch(96.9% 0.015 17.4)",
         "tonalRamp": [
-          "#180503",
-          "#351d17",
-          "#543731",
-          "#76544c",
-          "#9a7269",
-          "#bf9288",
-          "#e8b7ab",
-          "#ffe1d6"
+          "#110909",
+          "#2d2424",
+          "#4d4242",
+          "#6f6363",
+          "#928686",
+          "#b7aaaa",
+          "#dbcdcd",
+          "#f9ebeb"
         ]
       },
-      "arco-amarelo": {
+      "amarelo-50": {
         "role": "tertiary",
-        "displayName": "Rainbow Butter",
-        "canonical": "#efdcae",
-        "cssVar": "--arco-amarelo",
+        "displayName": "Campo Amarelo",
+        "canonical": "#fffbe8",
+        "oklch": "oklch(98.6% 0.025 97.1)",
         "tonalRamp": [
-          "#110a00",
-          "#2c230c",
-          "#493f24",
-          "#695c3e",
-          "#8a7c5a",
-          "#ad9d77",
-          "#d4c398",
-          "#ffedc0"
+          "#0e0b02",
+          "#2a2718",
+          "#494536",
+          "#6a6656",
+          "#8d8a78",
+          "#b2ae9d",
+          "#d5d1bf",
+          "#f3efdc"
         ]
       },
-      "arco-menta": {
+      "verde-50": {
         "role": "tertiary",
-        "displayName": "Rainbow Mint",
-        "canonical": "#a8d5bf",
-        "cssVar": "--arco-menta",
+        "displayName": "Campo Verde",
+        "canonical": "#edf7f0",
+        "oklch": "oklch(96.7% 0.014 155.6)",
         "tonalRamp": [
-          "#000f07",
-          "#112a1f",
-          "#2b473a",
-          "#466657",
-          "#638775",
-          "#81a996",
-          "#a4d0ba",
-          "#cffae5"
-        ]
+          "#070d09",
+          "#212924",
+          "#3f4742",
+          "#606963",
+          "#838c86",
+          "#a7b1aa",
+          "#cad4cd",
+          "#e7f1ea"
+        ],
+        "cssVar": "--menta-50"
       },
-      "arco-azul": {
+      "azul-faixa-50": {
         "role": "tertiary",
-        "displayName": "Rainbow Powder Blue",
-        "canonical": "#acd5dc",
-        "cssVar": "--arco-azul",
+        "displayName": "Campo Azul",
+        "canonical": "#eef7fc",
+        "oklch": "oklch(97.1% 0.012 231.7)",
         "tonalRamp": [
-          "#000e11",
-          "#12282b",
-          "#2b4549",
-          "#476368",
-          "#648489",
-          "#82a6ac",
-          "#a4ccd3",
-          "#d0f7fe"
+          "#070c0f",
+          "#21282b",
+          "#3f464a",
+          "#60676c",
+          "#828b8f",
+          "#a7afb4",
+          "#cad2d7",
+          "#e7f0f5"
+        ],
+        "cssVar": "--ceu-50"
+      },
+      "lilas-50": {
+        "role": "tertiary",
+        "displayName": "Campo Lilás",
+        "canonical": "#f7f0fe",
+        "oklch": "oklch(96.5% 0.020 308.2)",
+        "tonalRamp": [
+          "#0d0912",
+          "#29242e",
+          "#48424d",
+          "#69636f",
+          "#8c8693",
+          "#b1abb8",
+          "#d5cedb",
+          "#f2ebf9"
         ]
       },
-      "parede": {
-        "role": "neutral",
-        "displayName": "Sign Wall",
-        "canonical": "#f9f8fb",
-        "cssVar": "--parede",
+      "estrela": {
+        "role": "tertiary",
+        "displayName": "Estrela",
+        "canonical": "#e4a630",
+        "oklch": "oklch(76.5% 0.145 78.6)",
         "tonalRamp": [
-          "#0b0b0c",
-          "#242425",
-          "#403f41",
-          "#5e5d5f",
-          "#7d7d7f",
-          "#9f9ea0",
-          "#c4c3c6",
-          "#efeef1"
+          "#220000",
+          "#491200",
+          "#6d3500",
+          "#915800",
+          "#b87c00",
+          "#dfa129",
+          "#ffc555",
+          "#ffeabb"
         ]
       },
-      "nevoa": {
+      "tinta": {
         "role": "neutral",
-        "displayName": "Mist Lavender",
-        "canonical": "#f0eef6",
-        "cssVar": "--nevoa",
+        "displayName": "Tinta",
+        "canonical": "#1f2a37",
+        "oklch": "oklch(28.1% 0.029 253.0)",
         "tonalRamp": [
-          "#0b0b0d",
-          "#242327",
-          "#403f43",
-          "#5e5d62",
-          "#7e7c82",
-          "#9f9da4",
-          "#c5c3ca",
-          "#efedf5"
+          "#040c17",
+          "#1c2734",
+          "#3a4654",
+          "#5b6776",
+          "#7d8b9a",
+          "#a2afc0",
+          "#c4d3e4",
+          "#e1f0ff"
         ]
       },
-      "grafite": {
+      "tinta-suave": {
         "role": "neutral",
-        "displayName": "Graphite",
-        "canonical": "#2b2d3a",
-        "cssVar": "--grafite",
+        "displayName": "Tinta Suave",
+        "canonical": "#556170",
+        "oklch": "oklch(48.8% 0.028 254.1)",
         "tonalRamp": [
-          "#090a14",
-          "#21232f",
-          "#3d3f4c",
-          "#5a5d6a",
-          "#7a7c89",
-          "#9b9eaa",
-          "#c1c3cf",
-          "#eceef8"
-        ]
-      },
-      "grafite-suave": {
-        "role": "neutral",
-        "displayName": "Soft Graphite",
-        "canonical": "#555869",
-        "cssVar": "--grafite-suave",
-        "tonalRamp": [
-          "#090a15",
-          "#212330",
-          "#3c3f4e",
-          "#595c6d",
-          "#797c8d",
-          "#9a9dae",
-          "#c0c3d3",
-          "#ebeefc"
-        ]
-      },
-      "linha": {
-        "role": "neutral",
-        "displayName": "Hairline",
-        "canonical": "#dedbe8",
-        "cssVar": "--linha",
-        "tonalRamp": [
-          "#0b0a0f",
-          "#242329",
-          "#403e46",
-          "#5e5c64",
-          "#7e7c85",
-          "#9f9da7",
-          "#c5c2ce",
-          "#efecf9"
+          "#040c17",
+          "#1d2734",
+          "#3b4654",
+          "#5b6776",
+          "#7e8a9a",
+          "#a2afc0",
+          "#c5d2e4",
+          "#e2f0ff"
         ]
       },
       "branco": {
         "role": "neutral",
-        "displayName": "White",
+        "displayName": "Branco",
         "canonical": "#ffffff",
-        "cssVar": "--branco",
+        "oklch": "oklch(100.0% 0.000 89.9)",
         "tonalRamp": [
           "#0b0b0b",
-          "#242424",
-          "#404040",
-          "#5d5d5d",
-          "#7d7d7d",
-          "#9e9e9e",
-          "#c4c4c4",
+          "#262626",
+          "#454545",
+          "#666666",
+          "#898989",
+          "#aeaeae",
+          "#d1d1d1",
           "#eeeeee"
+        ]
+      },
+      "fundo-suave": {
+        "role": "neutral",
+        "displayName": "Fundo Suave",
+        "canonical": "#faf7fe",
+        "oklch": "oklch(98.0% 0.010 305.4)",
+        "tonalRamp": [
+          "#0c0a0e",
+          "#27252a",
+          "#464449",
+          "#67656b",
+          "#8a888e",
+          "#afacb3",
+          "#d2cfd6",
+          "#f0edf4"
+        ]
+      },
+      "linha": {
+        "role": "neutral",
+        "displayName": "Linha",
+        "canonical": "#ebe4f3",
+        "oklch": "oklch(92.9% 0.021 306.8)",
+        "tonalRamp": [
+          "#0d0912",
+          "#29242f",
+          "#48424e",
+          "#696370",
+          "#8c8694",
+          "#b1abb9",
+          "#d4cedc",
+          "#f2ebfa"
         ]
       }
     },
     "typographyMeta": {
       "display": {
         "displayName": "Display",
-        "purpose": "Her name in the hero (and the closing headline at step-5)."
+        "purpose": "Hero and closing headlines; Bricolage 760 at optical size 48."
       },
       "headline": {
         "displayName": "Headline",
-        "purpose": "Section titles in navy, max 17ch."
+        "purpose": "Section titles, always Azul Aline."
       },
       "title": {
         "displayName": "Title",
-        "purpose": "Step titles and numerals, mobile menu links, answers, pull quotes (larger)."
+        "purpose": "Card, step and trust-strip titles."
+      },
+      "quote": {
+        "displayName": "Quote",
+        "purpose": "Testimonials and the doctor's words in the display face."
       },
       "lead": {
         "displayName": "Lead",
-        "purpose": "Hero promise, section intros, question rows."
+        "purpose": "Hero and section leads in Tinta Suave, 40-46ch."
       },
       "body": {
         "displayName": "Body",
-        "purpose": "Running text at a 62ch measure."
+        "purpose": "Running text, measure 60ch."
       },
       "label": {
         "displayName": "Label",
-        "purpose": "Fact terms, captions, attributions in Soft Graphite; sentence case."
+        "purpose": "Small buttons, captions, footer labels; sentence case."
       }
     },
     "shadows": [
       {
-        "name": "action-lift",
-        "value": "0 18px 40px -24px rgba(15, 78, 112, 0.35)",
-        "purpose": "Resting primary button (--shadow-soft)."
+        "name": "card",
+        "value": "0 1px 2px rgba(15, 78, 112, 0.06), 0 14px 34px -16px rgba(15, 78, 112, 0.22)",
+        "purpose": "Floating white cards: hero info cards, photo badge, rating card, FAQ items."
       },
       {
-        "name": "action-lift-hover",
-        "value": "0 22px 44px -24px rgba(15, 78, 112, 0.55)",
-        "purpose": "Primary button hover."
+        "name": "float",
+        "value": "0 2px 4px rgba(15, 78, 112, 0.06), 0 24px 48px -20px rgba(15, 78, 112, 0.35)",
+        "purpose": "Hero portrait, overlapping trust strip, mobile menu panel."
       },
       {
-        "name": "dock-lift",
-        "value": "0 18px 36px -16px rgba(11, 58, 84, 0.55)",
-        "purpose": "Floating mobile WhatsApp dock."
+        "name": "primary-lift",
+        "value": "0 10px 24px -12px rgba(15, 78, 112, 0.7)",
+        "purpose": "Under the primary button; hover 0 16px 30px -14px rgba(15, 78, 112, 0.8)."
       },
       {
-        "name": "menu-drop",
-        "value": "0 24px 40px -28px rgba(43, 45, 58, 0.35), 0 1px 0 #dedbe8 inset",
-        "purpose": "Open mobile menu sheet."
+        "name": "header-elevated",
+        "value": "0 1px 0 #ebe4f3, 0 10px 30px -20px rgba(15, 78, 112, 0.35)",
+        "purpose": "Sticky header once the page scrolls."
       },
       {
-        "name": "header-hairline",
-        "value": "0 1px 0 #dedbe8",
-        "purpose": "Sticky header once scrolled."
+        "name": "dock",
+        "value": "0 18px 36px -14px rgba(11, 58, 84, 0.6)",
+        "purpose": "Mobile booking dock."
+      },
+      {
+        "name": "inset-ring",
+        "value": "inset 0 0 0 1.5px #ebe4f3",
+        "purpose": "Resting cards on white and outline buttons, in place of a shadow."
       }
     ],
     "motion": [
       {
         "name": "ease-out",
         "value": "cubic-bezier(0.16, 1, 0.3, 1)",
-        "purpose": "The only easing curve (--ease-out)."
+        "purpose": "All transitions and entrances."
       },
       {
-        "name": "duration-colour",
-        "value": "0.25s",
-        "purpose": "Colour and underline transitions."
+        "name": "state",
+        "value": "0.25s-0.35s",
+        "purpose": "Hover, press and accordion state changes."
       },
       {
-        "name": "duration-move",
-        "value": "0.35s",
-        "purpose": "Transform and shadow transitions."
+        "name": "hero-entrance",
+        "value": "photo 1.2s scale 1.05 to 1; info cards 0.9s rise 10px, staggered 0.35s and 0.5s",
+        "purpose": "Hero load only; disabled under prefers-reduced-motion."
       },
       {
-        "name": "portrait-in",
-        "value": "1.4s, opacity 0 and scale(1.06) to rest",
-        "purpose": "Hero portrait entrance."
-      },
-      {
-        "name": "name-in",
-        "value": "1.1s, translateY(0.35em) to rest, staggered 0.22s / 0.32s",
-        "purpose": "Hero name entrance."
-      },
-      {
-        "name": "arc-draw",
-        "value": "1.2s stroke-dashoffset, 320ms stagger, at 70% visibility",
-        "purpose": "Journey arcs drawing in sequence."
-      },
-      {
-        "name": "reduced-motion",
-        "value": "durations to 0.01ms; arcs shown complete",
-        "purpose": "prefers-reduced-motion: reduce."
+        "name": "gallery-zoom",
+        "value": "0.8s scale 1.04",
+        "purpose": "Gallery photo hover."
       }
     ],
     "breakpoints": [
       {
-        "name": "tablet",
+        "name": "sm",
         "value": "600px"
       },
       {
-        "name": "columns",
+        "name": "md",
         "value": "760px"
       },
       {
-        "name": "desktop",
+        "name": "lg",
         "value": "960px"
       },
       {
-        "name": "wide",
-        "value": "1280px"
+        "name": "xl",
+        "value": "1080px"
       }
     ],
     "layout": {
-      "maxWidth": "1320px",
-      "measure": "62ch",
-      "headerHeight": "68px",
-      "grid": "12 columns, gutter-width gaps, at 960px+"
+      "container": "1240px",
+      "measure": "60ch",
+      "headerHeight": "76px"
     }
   },
   "components": [
     {
-      "name": "Primary Button (doorway on the line)",
+      "name": "Primary Button",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "The one action per moment: navy arch-topped doorway seated on a 1px navy rule.",
-      "html": "<div class=\"ds-doorway-set\"><a class=\"ds-btn-primary\" href=\"#\"><svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z\"/></svg><span>Conversar no WhatsApp</span></a></div>",
-      "css": ".ds-doorway-set{display:flex;align-items:flex-end;border-bottom:1px solid var(--azul,#0f4e70);padding-top:24px}.ds-btn-primary{display:inline-flex;align-items:center;gap:.6rem;min-height:56px;margin-bottom:-1px;padding:.9rem 1.75rem .85rem;border-radius:999px 999px 4px 4px;background:var(--azul,#0f4e70);color:#fff;font-family:var(--font-text),Figtree,Arial,sans-serif;font-weight:600;font-size:1.0625rem;line-height:1.2;text-decoration:none;box-shadow:0 18px 40px -24px rgba(15,78,112,.35);transition:background-color .25s cubic-bezier(.16,1,.3,1),box-shadow .35s cubic-bezier(.16,1,.3,1),transform .35s cubic-bezier(.16,1,.3,1)}.ds-btn-primary:hover{background:var(--azul-profundo,#0b3a54);box-shadow:0 22px 44px -24px rgba(15,78,112,.55)}.ds-btn-primary:active{transform:translateY(1px)}.ds-btn-primary:focus-visible{outline:2px solid var(--azul,#0f4e70);outline-offset:3px}.ds-icon{width:1.25em;height:1.25em;flex:none}"
+      "description": "Azul Aline pill for the main action (WhatsApp booking).",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\">Agendar pelo WhatsApp</a>",
+      "css": ".ds-btn-primary{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;min-height:52px;padding:.85rem 1.5rem;border-radius:999px;background:var(--azul,#0f4e70);color:#fff;font-family:var(--font-text,Figtree,Arial,sans-serif);font-weight:650;font-size:1rem;line-height:1.2;text-decoration:none;box-shadow:0 10px 24px -12px rgba(15,78,112,.7);transition:background-color .25s var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)),box-shadow .35s var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)),transform .35s var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1))}.ds-btn-primary:hover{background:var(--azul-profundo,#0b3a54);transform:translateY(-1px);box-shadow:0 16px 30px -14px rgba(15,78,112,.8)}.ds-btn-primary:active{transform:translateY(1px)}.ds-btn-primary:focus-visible{outline:2.5px solid var(--azul,#0f4e70);outline-offset:3px}"
     },
     {
-      "name": "Light Button on navy",
+      "name": "Outline Button",
       "kind": "button",
-      "refersTo": "button-light",
-      "description": "Large white doorway for navy grounds (closing), seated on a 1px white rule.",
-      "html": "<div class=\"ds-navy\"><div class=\"ds-doorway-set-light\"><a class=\"ds-btn-light\" href=\"#\">Conversar no WhatsApp</a></div></div>",
-      "css": ".ds-navy{background:var(--azul,#0f4e70);padding:32px}.ds-doorway-set-light{display:flex;border-bottom:1px solid #fff}.ds-btn-light{display:inline-flex;align-items:center;min-height:64px;margin-bottom:-1px;padding:.9rem 2rem .85rem;border-radius:999px 999px 4px 4px;background:#fff;color:var(--azul,#0f4e70);font-family:var(--font-text),Figtree,Arial,sans-serif;font-weight:600;font-size:1.3rem;text-decoration:none;transition:background-color .25s cubic-bezier(.16,1,.3,1)}.ds-btn-light:hover{background:var(--azul-claro,#d8e6ee)}.ds-btn-light:focus-visible{outline:2px solid #fff;outline-offset:3px}"
+      "refersTo": "button-outline",
+      "description": "White pill with inset ring, for phone and route actions beside a primary.",
+      "html": "<a class=\"ds-btn-outline\" href=\"#\">(45) 98433-3443</a>",
+      "css": ".ds-btn-outline{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:.85rem 1.5rem;border-radius:999px;background:#fff;color:var(--azul,#0f4e70);font-family:var(--font-text,Figtree,Arial,sans-serif);font-weight:650;font-size:1rem;text-decoration:none;box-shadow:inset 0 0 0 1.5px var(--linha,#ebe4f3);transition:box-shadow .35s var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1))}.ds-btn-outline:hover{box-shadow:inset 0 0 0 1.5px var(--azul,#0f4e70)}.ds-btn-outline:focus-visible{outline:2.5px solid var(--azul,#0f4e70);outline-offset:3px}"
     },
     {
-      "name": "Link with arrow",
+      "name": "Arrow Link",
       "kind": "custom",
-      "refersTo": "link-arrow",
-      "description": "Secondary action: navy underlined link whose arrow nudges on hover.",
-      "html": "<a class=\"ds-link-arrow\" href=\"#\"><span>Como é a consulta</span><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12h14m-6-6 6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
-      "css": ".ds-link-arrow{display:inline-flex;align-items:center;gap:.45rem;min-height:44px;color:var(--azul,#0f4e70);font-family:var(--font-text),Figtree,Arial,sans-serif;font-weight:600;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.3em;text-decoration-color:rgba(15,78,112,.35);transition:text-decoration-color .25s cubic-bezier(.16,1,.3,1)}.ds-link-arrow svg{width:1.25em;height:1.25em;transition:transform .35s cubic-bezier(.16,1,.3,1)}.ds-link-arrow:hover{text-decoration-color:var(--azul,#0f4e70)}.ds-link-arrow:hover svg{transform:translateX(3px)}.ds-link-arrow:focus-visible{outline:2px solid var(--azul,#0f4e70);outline-offset:3px;border-radius:4px}"
+      "description": "Inline Azul Aline link with soft underline and nudging arrow.",
+      "html": "<a class=\"ds-link-arrow\" href=\"#\">Tire dúvidas sobre a sedação<svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" aria-hidden=\"true\"><path fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M5 12h14m-5-5 5 5-5 5\"/></svg></a>",
+      "css": ".ds-link-arrow{display:inline-flex;align-items:center;gap:.45rem;min-height:44px;color:var(--azul,#0f4e70);font-family:var(--font-text,Figtree,Arial,sans-serif);font-weight:650;text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:.3em;text-decoration-color:rgba(15,78,112,.3);transition:text-decoration-color .25s var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1))}.ds-link-arrow svg{transition:transform .35s var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1))}.ds-link-arrow:hover{text-decoration-color:#0f4e70}.ds-link-arrow:hover svg{transform:translateX(3px)}.ds-link-arrow:focus-visible{outline:2.5px solid #0f4e70;outline-offset:3px;border-radius:6px}"
     },
     {
-      "name": "Desktop navigation",
+      "name": "Navigation",
       "kind": "nav",
-      "refersTo": "nav-link",
-      "description": "Graphite Figtree links; lilac underline and navy text on hover and for the current section.",
-      "html": "<nav class=\"ds-nav\"><a href=\"#\">A Dra. Aline</a><a href=\"#\">A consulta</a><a href=\"#\" aria-current=\"true\">Sedação</a><a href=\"#\">Dúvidas</a></nav>",
-      "css": ".ds-nav{display:flex;gap:1.75rem;background:var(--parede,#f9f8fb);padding:16px 0}.ds-nav a{padding:.5rem 0;font-family:var(--font-text),Figtree,Arial,sans-serif;font-size:.95rem;font-weight:500;color:var(--grafite,#2b2d3a);text-decoration:underline;text-decoration-color:transparent;text-decoration-thickness:1.5px;text-underline-offset:.45em;transition:color .25s cubic-bezier(.16,1,.3,1),text-decoration-color .25s cubic-bezier(.16,1,.3,1)}.ds-nav a:hover,.ds-nav a[aria-current=\"true\"]{color:var(--azul,#0f4e70);text-decoration-color:var(--lilas,#c3bde3)}.ds-nav a:focus-visible{outline:2px solid var(--azul,#0f4e70);outline-offset:3px;border-radius:4px}"
+      "description": "Sticky white header: official horizontal logo, pill links, small primary CTA.",
+      "html": "<nav class=\"ds-nav\"><span class=\"ds-nav__logo\">Aline Sanfelice</span><a href=\"#\" aria-current=\"true\">A Dra. Aline</a><a href=\"#\">Primeira consulta</a><a href=\"#\">Dúvidas</a><a class=\"ds-nav__cta\" href=\"#\">Agendar</a></nav>",
+      "css": ".ds-nav{display:flex;align-items:center;gap:.15rem;height:76px;padding:0 1.25rem;background:#fff;box-shadow:0 1px 0 #ebe4f3,0 10px 30px -20px rgba(15,78,112,.35);font-family:var(--font-text,Figtree,Arial,sans-serif)}.ds-nav__logo{margin-right:auto;font-family:var(--font-display,\"Bricolage Grotesque\",Arial,sans-serif);font-weight:750;color:#0f4e70}.ds-nav a{padding:.55rem .8rem;border-radius:999px;font-size:.95rem;font-weight:550;color:#1f2a37;text-decoration:none}.ds-nav a:hover,.ds-nav a[aria-current=\"true\"]{background:#faf7fe;color:#0f4e70}.ds-nav a:focus-visible{outline:2.5px solid #0f4e70;outline-offset:3px}.ds-nav a.ds-nav__cta{margin-left:.5rem;min-height:44px;display:inline-flex;align-items:center;padding:.6rem 1.15rem;background:#0f4e70;color:#fff;font-weight:650}.ds-nav a.ds-nav__cta:hover{background:#0b3a54;color:#fff}"
     },
     {
-      "name": "Arch frame",
-      "kind": "custom",
-      "refersTo": "rounded.arch",
-      "description": "Semicircular-topped, flat-based photo frame. Hero portrait and facade only.",
-      "html": "<figure class=\"ds-arch\"><div class=\"ds-arch-fill\"></div></figure>",
-      "css": ".ds-arch{width:220px;height:330px;margin:0;overflow:hidden;border-radius:999px 999px 0 0;background:var(--nevoa,#f0eef6)}.ds-arch-fill{width:100%;height:100%;background:linear-gradient(180deg,#f0eef6,#d8e6ee)}"
+      "name": "Field Card",
+      "kind": "card",
+      "refersTo": "card-field",
+      "description": "Service card on a logo -50 field with white icon tile and Azul Aline title.",
+      "html": "<article class=\"ds-card-field\"><span class=\"ds-card-field__icon\"><svg viewBox=\"0 0 24 24\" width=\"26\" height=\"26\" aria-hidden=\"true\"><path fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linejoin=\"round\" d=\"M19 14.5A7.5 7.5 0 0 1 9.5 5a7.5 7.5 0 1 0 9.5 9.5z\"/></svg></span><h3>Sedação odontológica</h3><p>Um recurso para situações específicas, indicado depois de avaliação.</p></article>",
+      "css": ".ds-card-field{display:flex;flex-direction:column;gap:.75rem;max-width:22rem;padding:2rem;border-radius:22px;background:var(--menta-50,#edf7f0);font-family:var(--font-text,Figtree,Arial,sans-serif)}.ds-card-field__icon{display:grid;place-items:center;width:52px;height:52px;border-radius:16px;background:#fff;color:#0f4e70}.ds-card-field h3{margin:0;font-family:var(--font-display,\"Bricolage Grotesque\",Arial,sans-serif);font-size:1.5rem;font-weight:750;letter-spacing:-.02em;line-height:1.15;color:#0f4e70}.ds-card-field p{margin:0;color:#556170;line-height:1.6}"
     },
     {
-      "name": "Journey arcs",
+      "name": "First-Visit Rail",
       "kind": "custom",
-      "refersTo": "colors.arco-rosa",
-      "description": "The five logo arcs over a tooth outline; they draw in sequence, one per journey step.",
-      "html": "<svg class=\"ds-arcs\" viewBox=\"0 0 240 128\" aria-hidden=\"true\"><path pathLength=\"1\" style=\"--arc:#f2bfb3;--d:0s\" d=\"M10 124a110 110 0 0 1 220 0\"/><path pathLength=\"1\" style=\"--arc:#efdcae;--d:.32s\" d=\"M30 124a90 90 0 0 1 180 0\"/><path pathLength=\"1\" style=\"--arc:#a8d5bf;--d:.64s\" d=\"M50 124a70 70 0 0 1 140 0\"/><path class=\"ds-dashed\" pathLength=\"1\" style=\"--arc:#acd5dc;--d:.96s\" d=\"M70 124a50 50 0 0 1 100 0\"/><path pathLength=\"1\" style=\"--arc:#c3bde3;--d:1.28s\" d=\"M90 124a30 30 0 0 1 60 0\"/></svg>",
-      "css": ".ds-arcs{width:300px;overflow:visible}.ds-arcs path{fill:none;stroke:var(--arc);stroke-width:5;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;animation:ds-draw 1.2s cubic-bezier(.16,1,.3,1) var(--d) forwards}.ds-arcs .ds-dashed{stroke-linecap:butt;stroke-dasharray:.035 .028;stroke-dashoffset:0;opacity:0;animation:ds-fade .9s cubic-bezier(.16,1,.3,1) var(--d) forwards}@keyframes ds-draw{to{stroke-dashoffset:0}}@keyframes ds-fade{to{opacity:1}}@media (prefers-reduced-motion:reduce){.ds-arcs path{animation:none;stroke-dashoffset:0;opacity:1}}"
+      "refersTo": "step-stop",
+      "description": "The logo dashed azul band as a path through five stops filled with the logo bands in order.",
+      "html": "<ol class=\"ds-rail\"><li style=\"--c:#fbb5b7\"><b>1</b>Primeira conversa</li><li style=\"--c:#fef4ae\"><b>2</b>Conhecer o espaço</li><li style=\"--c:#a9d3b7\"><b>3</b>Avaliação</li><li style=\"--c:#add8ed\"><b>4</b>Plano conversado</li><li style=\"--c:#e6cbfc\"><b>5</b>Cuidado em casa</li></ol>",
+      "css": ".ds-rail{position:relative;display:grid;grid-template-columns:repeat(5,1fr);gap:1.5rem;margin:0;padding:0;list-style:none;font-family:var(--font-display,\"Bricolage Grotesque\",Arial,sans-serif);font-weight:700;font-size:1rem;color:#0f4e70}.ds-rail::before{content:\"\";position:absolute;left:23px;right:calc(20% - 23px);top:22px;border-top:3px dashed #add8ed}.ds-rail li{position:relative;display:grid;gap:.75rem}.ds-rail b{display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:var(--c);box-shadow:0 0 0 5px #faf7fe;font-size:1.25rem;font-weight:800}"
     },
     {
-      "name": "Question row",
+      "name": "Trust Strip",
       "kind": "custom",
-      "refersTo": "typography.lead",
-      "description": "Accordion question between hairlines; open state turns navy, answer set in Young Serif.",
-      "html": "<div class=\"ds-q\"><button class=\"ds-q-btn\" aria-expanded=\"true\">Meu filho tem medo de dentista</button><p class=\"ds-q-a\">Ela começa pela confiança, no tempo da criança.</p><button class=\"ds-q-btn\" aria-expanded=\"false\">Com que idade levar?</button></div>",
-      "css": ".ds-q{max-width:520px;border-bottom:1px solid var(--linha,#dedbe8)}.ds-q-btn{display:flex;width:100%;min-height:60px;padding:.9rem 0;border:0;border-top:1px solid var(--linha,#dedbe8);background:none;text-align:left;font-family:var(--font-text),Figtree,Arial,sans-serif;font-size:1.3rem;font-weight:600;line-height:1.3;color:var(--grafite,#2b2d3a);cursor:pointer;transition:color .25s cubic-bezier(.16,1,.3,1)}.ds-q-btn:hover,.ds-q-btn[aria-expanded=\"true\"]{color:var(--azul,#0f4e70)}.ds-q-btn:focus-visible{outline:2px solid var(--azul,#0f4e70);outline-offset:3px}.ds-q-a{margin:0;padding:.25rem 0 1.5rem;font-family:var(--font-display),'Young Serif',Georgia,serif;font-size:1.6rem;line-height:1.35;color:var(--azul,#0f4e70)}"
+      "description": "Text-only white band with dividers that overlaps the hero base.",
+      "html": "<ul class=\"ds-trust\"><li><strong>Consulta sem pressa</strong>no ritmo de cada criança</li><li><strong>Consultório lúdico</strong>pensado para crianças</li><li><strong>Acessível</strong>e com estacionamento no local</li></ul>",
+      "css": ".ds-trust{display:grid;grid-template-columns:repeat(3,1fr);margin:0;padding:1.4rem 0;list-style:none;border-radius:22px;background:#fff;box-shadow:0 2px 4px rgba(15,78,112,.06),0 24px 48px -20px rgba(15,78,112,.35);font-family:var(--font-text,Figtree,Arial,sans-serif);font-size:.92rem;line-height:1.4;color:#556170}.ds-trust li{display:grid;gap:.15rem;padding:0 1.75rem}.ds-trust li+li{border-left:1px solid #ebe4f3}.ds-trust strong{font-family:var(--font-display,\"Bricolage Grotesque\",Arial,sans-serif);font-size:1.05rem;font-weight:700;color:#0f4e70}"
     },
     {
-      "name": "Mobile dock",
+      "name": "Feature Review",
+      "kind": "card",
+      "refersTo": "card-review-feature",
+      "description": "The large Lilás 50 testimonial of the reviews bento, set in the display face.",
+      "html": "<blockquote class=\"ds-review-big\"><p>Tem um cuidado diferenciado e uma atenção que não havia tido antes.</p><footer><span>D</span>Dani R., mãe de criança atípica</footer></blockquote>",
+      "css": ".ds-review-big{margin:0;max-width:34rem;padding:2.5rem;border-radius:22px;background:var(--lilas-50,#f7f0fe)}.ds-review-big p{margin:0;font-family:var(--font-display,\"Bricolage Grotesque\",Arial,sans-serif);font-size:1.6rem;font-weight:600;line-height:1.3;letter-spacing:-.01em;color:#0f4e70}.ds-review-big footer{display:flex;align-items:center;gap:.75rem;margin-top:1rem;font-family:var(--font-text,Figtree,Arial,sans-serif);font-size:.88rem;color:#556170}.ds-review-big footer span{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:#fff;font-family:var(--font-display,\"Bricolage Grotesque\",Arial,sans-serif);font-weight:750;color:#0f4e70}"
+    },
+    {
+      "name": "FAQ Item",
       "kind": "custom",
-      "refersTo": "dock",
-      "description": "Fixed navy WhatsApp bar on phones with a doorway top and white icon well.",
-      "html": "<a class=\"ds-dock\" href=\"#\"><span class=\"ds-dock-text\"><span class=\"ds-dock-title\">Conversar no WhatsApp</span><span class=\"ds-dock-meta\">Seg a sex, 8h às 18h</span></span><span class=\"ds-dock-icon\"><svg viewBox=\"0 0 24 24\" width=\"22\" height=\"22\" aria-hidden=\"true\"><path d=\"M5 12h14m-6-6 6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\"/></svg></span></a>",
-      "css": ".ds-dock{display:flex;align-items:center;justify-content:space-between;gap:1rem;max-width:360px;min-height:62px;padding:.5rem .6rem .45rem 1.5rem;border-radius:999px 999px 8px 8px;background:var(--azul,#0f4e70);color:#fff;text-decoration:none;font-family:var(--font-text),Figtree,Arial,sans-serif;box-shadow:0 18px 36px -16px rgba(11,58,84,.55)}.ds-dock-text{display:grid;line-height:1.3}.ds-dock-title{font-weight:600}.ds-dock-meta{font-size:.8rem;color:var(--azul-claro,#d8e6ee)}.ds-dock-icon{display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:#fff;color:var(--azul,#0f4e70)}.ds-dock:focus-visible{outline:2px solid var(--azul,#0f4e70);outline-offset:3px}"
+      "refersTo": "faq-item",
+      "description": "White accordion row with Card shadow and a lilac plus that rotates when open.",
+      "html": "<button class=\"ds-faq\" aria-expanded=\"false\">Com que idade levar ao dentista?</button>",
+      "css": ".ds-faq{display:flex;width:100%;max-width:36rem;align-items:center;justify-content:space-between;gap:1rem;min-height:64px;padding:1rem 1.25rem;border:0;border-radius:22px;background:#fff;box-shadow:0 1px 2px rgba(15,78,112,.06),0 14px 34px -16px rgba(15,78,112,.22);text-align:left;font-family:var(--font-text,Figtree,Arial,sans-serif);font-size:1.15rem;font-weight:650;line-height:1.3;color:#1f2a37;cursor:pointer;transition:color .25s var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1))}.ds-faq::after{content:\"\";flex:none;width:32px;height:32px;border-radius:50%;background:linear-gradient(#0f4e70,#0f4e70) center/12px 2px no-repeat,linear-gradient(#0f4e70,#0f4e70) center/2px 12px no-repeat,#f7f0fe;transition:transform .35s var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1))}.ds-faq:hover{color:#0f4e70}.ds-faq:hover::after{transform:rotate(45deg);background-color:#e6cbfc}.ds-faq:focus-visible{outline:2.5px solid #0f4e70;outline-offset:3px}"
     }
   ],
   "narrative": {
-    "northStar": "The Room of Arches",
-    "overview": "The page is her consulting room. A generous sign-wall white carries almost everything; one navy, Azul Aline, signs the name, the headings, the action and the links; photography of her and her real clinic is the protagonist. The arch of the clinic wall is the system's one geometric idea, and it is spent sparingly: it frames her portrait and the facade, it tops the primary action, and it returns as the five thin arcs of her rainbow logo.\n\nDensity is calm and editorial. Sections breathe on a fluid vertical rhythm (up to 9rem), content sits on a 12-column grid that lets photos bleed to the viewport edge while text holds a 62ch measure. Structure is drawn with 1px lines rather than boxes: facts, steps, questions and reviews are separated by hairlines, never enclosed in cards. Colour is restrained to the point of rarity; the logo pastels never fill a surface.\n\nThe world refuses the category default of a split hero with pills, card grids and pastel everywhere (direction contract, confirmed by the user).",
+    "northStar": "The Rainbow on White",
+    "overview": "The system is built from one supplied object: Dra. Aline's official rainbow logo. Its five bands (rosa, amarelo, verde, a dashed azul band, lilás) and the pink tooth at its centre are measured from the logo file and reused at two strengths: full strength as small accents and stops, and as near-white `-50` tints that become section and card fields. Everything that speaks (headings, primary actions, key numbers) is one strong colour, Azul Aline. The ground is white.\n\nThe register is the category standard for a premium pediatric practice, executed with care: real photography of the doctor and the clinic, rounded cards, pill buttons, soft navy-tinted shadows, a friendly grotesque for headings and a clean, round sans for reading. It is warm and clear for parents, who are the readers, and it is not infantile. It also refuses the editorial look (cream ground, serif display, hairline rules).\n\nDensity is relaxed. Sections breathe on a fluid vertical rhythm, and white sections alternate with a faint lilac-white tint so the long single page reads as distinct rooms.",
     "keyCharacteristics": [
-      "White wall ground, one strong navy, graphite ink.",
-      "Arch geometry: portrait and facade frames, arch-topped actions, the logo arcs.",
-      "Lines instead of containers; no cards.",
-      "Serif display in navy at large sizes; plain humanist sans for everything read.",
-      "Motion is slow and settling (one expo-out curve), never bouncy."
+      "White ground; logo-derived pastel fields (`-50` tints) for hero, closing, cards and avatars.",
+      "Azul Aline as the only strong colour; every heading and primary action uses it.",
+      "The logo's dashed azul band reappears as a structural device (first-visit rail, hero arc).",
+      "Rounded geometry at three radii plus pill; soft, navy-tinted shadows.",
+      "Real photos only, in large rounded frames."
     ],
     "rules": [
       {
-        "name": "The One Strong Colour Rule",
-        "body": "Azul Aline is the only saturated colour on any screen. A second accent never appears; emphasis comes from size and the serif, not from another hue.",
+        "name": "The One Voice Rule",
+        "body": "Only Azul Aline speaks. Headings, primary buttons and key numbers are Azul Aline; the rainbow colours never carry text and never fill a button.",
         "section": "colors"
       },
       {
-        "name": "The Thin Rainbow Rule",
-        "body": "The logo pastels exist only as stroked arcs (2-5px). They never fill a block, a button, a background or a card.",
+        "name": "The Field, Not Fill Rule",
+        "body": "A rainbow colour covers a large area only as its `-50` tint. Full-strength bands stay small: stops, dots, strokes, arcs.",
         "section": "colors"
       },
       {
-        "name": "The Serif Speaks For Her Rule",
-        "body": "Young Serif is reserved for her name, section titles, step titles, quotes and her answers. Anything a parent scans for logistics (facts, labels, buttons, navigation on desktop) is Figtree.",
+        "name": "The Measured Palette Rule",
+        "body": "The rainbow values are the logo's own colours. Do not shift or saturate them, and do not add a sixth hue.",
+        "section": "colors"
+      },
+      {
+        "name": "The Display-Face-For-Voices Rule",
+        "body": "Bricolage is for headings and for quoted human voices (testimonials, the doctor's words). Running text, buttons and UI stay in Figtree.",
         "section": "typography"
       },
       {
-        "name": "The Sentence Case Rule",
-        "body": "No uppercase, no tracked-out labels anywhere in the build. Hierarchy comes from size, face and colour.",
+        "name": "The Title-First Rule",
+        "body": "A section opens with its title. No uppercase labels, eyebrows or kickers above headings.",
         "section": "typography"
       },
       {
-        "name": "The Lines Not Boxes Rule",
-        "body": "Group content with a 1px top rule (Hairline on light, translucent white or lilac on navy), never with a bordered or shadowed card.",
+        "name": "The Navy Shadow Rule",
+        "body": "Shadows are tinted with Azul Aline, soft and negatively spread. No grey or black shadows, no hard offsets.",
         "section": "elevation"
-      },
-      {
-        "name": "The Two Arches Rule",
-        "body": "The full arch frame belongs to the hero portrait and the facade. Other photos are soft rectangles; adding a third arch frame dilutes the signature.",
-        "section": "shapes"
-      },
-      {
-        "name": "The Doorway Rule",
-        "body": "A primary action is an arch-topped doorway set into a line: its flat base overlaps (-1px) a full-width 1px rule (navy on light grounds, white on navy), the rule that also tops the facts beneath it.",
-        "section": "shapes"
       }
     ],
     "dos": [
-      "Do keep Sign Wall (#f9f8fb) as the dominant ground and Azul Aline (#0f4e70) as the only strong colour.",
-      "Do seat every primary action on a 1px full-width rule with the button overlapping it by 1px.",
-      "Do separate groups with 1px rules in Hairline (#dedbe8) and let the 12-column grid set asymmetric text/image pairs.",
-      "Do set her name, titles and her answers in Young Serif 400 navy, and everything logistical in Figtree.",
-      "Do use the expo-out curve (cubic-bezier(0.16, 1, 0.3, 1)) for all motion and honour reduced motion by showing the final state.",
-      "Do use real photos of her and the clinic as the protagonist, with alt text describing the scene."
+      "**Do** use the official logo files as supplied: the horizontal lockup in header and footer, the full transparent logo in the closing.",
+      "**Do** set every heading and primary action in Azul Aline and keep body text in Tinta.",
+      "**Do** use the logo bands as `-50` fields for large areas, and at full strength only for small marks (stops, dots, strokes, arcs).",
+      "**Do** keep the five bands in logo order whenever they appear together, with the azul band dashed.",
+      "**Do** round everything (14 / 22 / 32px, pill buttons) and keep shadows soft and navy-tinted.",
+      "**Do** use real photographs of Dra. Aline and the clinic in large rounded frames."
     ],
     "donts": [
-      "Don't use the logo pastels as fills, backgrounds, buttons or cards; they are stroked arcs only.",
-      "Don't add a third arch-framed photo; arch frames are the hero portrait and the facade.",
-      "Don't put content in bordered or shadowed cards, or build pill-chip rows and card grids.",
-      "Don't set text in Sign Lilac (#c3bde3); use Lilac Ink (#5f5893) when lilac text is needed.",
-      "Don't introduce uppercase or letter-spaced labels; the system is sentence case throughout."
+      "**Don't** set text or fill buttons in the rainbow colours.",
+      "**Don't** use a cream ground, a serif display face or hairline-only editorial layouts.",
+      "**Don't** go infantile: no saturated primary-colour toy palette, no \"escolinha\" decoration.",
+      "**Don't** add uppercase eyebrows or kickers above section titles.",
+      "**Don't** use grey or black shadows, or hard offset shadows.",
+      "**Don't** redraw, recolour or re-letter the logo."
     ]
   }
 }
