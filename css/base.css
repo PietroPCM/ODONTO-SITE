@@ -278,6 +278,22 @@ strong {
   height: 1.05em;
 }
 
+/* Logo oficial (versão horizontal montada a partir do arquivo da marca) */
+.logo__img {
+  width: auto;
+  height: 46px;
+}
+
+@media (max-width: 599px) {
+  .logo__img { height: 40px; }
+}
+
+.logo--light {
+  padding: 0.6rem 0.9rem;
+  border-radius: var(--r-sm);
+  background: var(--branco);
+}
+
 /* Logo (marca do arco-íris + nome) */
 .logo {
   display: inline-flex;
