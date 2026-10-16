@@ -17,7 +17,7 @@ Vercel (o `vercel.json` já define cache para imagens, fontes, CSS e JS), Netlif
 
 ## Antes de publicar
 
-- [ ] **Domínio:** troque `SEU-DOMINIO-AQUI` em `sitemap.xml` e torne absolutas as URLs de `og:image` e `image` (JSON-LD) em `index.html`.
+- [ ] **Domínio:** hoje é `site-dra-aline.vercel.app`. Ao trocar, atualize canonical, `og:url`, `og:image`, JSON-LD (`index.html`), `sitemap.xml` e `robots.txt`.
 - [ ] **Avaliações:** nota e número (5,0 · 38) foram conferidos no Google Maps em 16/10/2026. Atualize os dois pontos em `index.html` (hero e seção "Famílias") quando mudarem.
 - [ ] **Logo oficial em vetor:** a marca no cabeçalho e as cores foram reconstruídas a partir de fotos do letreiro. Com o arquivo original, ajuste os HEX em `css/tokens.css` e o SVG da marca.
 - [ ] **Equipe:** confirmar nomes completos e áreas dos colegas (seção "No mesmo consultório").
