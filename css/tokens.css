@@ -1,0 +1,91 @@
+/* Design tokens — Dra. Aline Sanfelice
+   Cores medidas no letreiro, na fachada e na arte do Instagram da marca.
+   Hierarquia: branco-parede domina, Azul Aline assina, grafite dá leitura,
+   lilás e arco-íris só em detalhes intencionais. */
+
+@font-face {
+  font-family: "Young Serif";
+  src: url("../assets/fonts/young-serif-latin.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("../assets/fonts/figtree-latin.woff2") format("woff2");
+  font-weight: 300 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Fallbacks métricos para reduzir layout shift durante a troca de fonte */
+@font-face {
+  font-family: "Young Serif Fallback";
+  src: local("Georgia");
+  size-adjust: 104%;
+  ascent-override: 92%;
+  descent-override: 24%;
+}
+
+@font-face {
+  font-family: "Figtree Fallback";
+  src: local("Arial");
+  size-adjust: 98%;
+  ascent-override: 96%;
+  descent-override: 25%;
+}
+
+:root {
+  /* Marca */
+  --azul: #0f4e70;          /* Azul Aline — assinatura cromática */
+  --azul-profundo: #0b3a54; /* hover / pressionado */
+  --azul-claro: #d8e6ee;    /* realces sobre o azul */
+  --grafite: #2b2d3a;       /* texto */
+  --grafite-suave: #555869; /* texto secundário (5.9:1 no fundo) */
+  --lilas: #c3bde3;         /* letras do letreiro — fios e detalhes */
+  --lilas-tinta: #5f5893;   /* lilás legível para texto pequeno */
+
+  /* Arco-íris do logo — apenas fios finos */
+  --arco-rosa: #f2bfb3;
+  --arco-amarelo: #efdcae;
+  --arco-menta: #a8d5bf;
+  --arco-azul: #acd5dc;
+
+  /* Neutros */
+  --parede: #f9f8fb;        /* fundo dominante */
+  --nevoa: #f0eef6;         /* superfície alternada */
+  --linha: #dedbe8;         /* hairlines */
+  --branco: #ffffff;
+
+  /* Tipografia */
+  --font-display: "Young Serif", "Young Serif Fallback", Georgia, serif;
+  --font-text: "Figtree", "Figtree Fallback", "Helvetica Neue", Arial, sans-serif;
+
+  --step--1: clamp(0.84rem, 0.82rem + 0.1vw, 0.9rem);
+  --step-0: clamp(1rem, 0.97rem + 0.15vw, 1.0625rem);
+  --step-1: clamp(1.15rem, 1.09rem + 0.3vw, 1.3rem);
+  --step-2: clamp(1.4rem, 1.27rem + 0.6vw, 1.75rem);
+  --step-3: clamp(1.75rem, 1.5rem + 1.2vw, 2.5rem);
+  --step-4: clamp(2.2rem, 1.8rem + 2vw, 3.5rem);
+  --step-5: clamp(2.9rem, 2.1rem + 4vw, 6rem);
+
+  /* Espaço */
+  --gutter: clamp(1rem, 0.6rem + 2vw, 2.5rem);
+  --space-xs: 0.5rem;
+  --space-s: 1rem;
+  --space-m: clamp(1.5rem, 1.2rem + 1vw, 2rem);
+  --space-l: clamp(2.5rem, 2rem + 2vw, 4rem);
+  --space-xl: clamp(4.5rem, 3rem + 6vw, 9rem);
+
+  --max: 1320px;
+  --measure: 62ch;
+
+  --radius-s: 6px;
+  --radius-pill: 999px;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --shadow-soft: 0 18px 40px -24px rgba(15, 78, 112, 0.35);
+
+  --header-h: 68px;
+}

@@ -1,70 +1,64 @@
-// Controla o menu mobile e o estado elevado do cabeçalho.
+// Menu do celular, cabeçalho elevado e seção ativa na navegação.
 
 export function initMenu() {
-  const toggle = document.getElementById("menu-toggle");
-  const nav = document.getElementById("primary-nav");
-  const header = document.getElementById("site-header");
-  if (!toggle || !nav || !header) return;
+  const toggle = document.querySelector("[data-nav-toggle]");
+  const list = document.querySelector("[data-nav-list]");
+  const header = document.querySelector("[data-header]");
+  if (!toggle || !list || !header) return;
 
-  const close = () => {
-    nav.classList.remove("is-open");
+  const isOpen = () => toggle.getAttribute("aria-expanded") === "true";
+
+  const close = ({ returnFocus = false } = {}) => {
+    list.classList.remove("is-open");
     toggle.setAttribute("aria-expanded", "false");
-    toggle.setAttribute("aria-label", "Abrir menu");
-    document.body.classList.remove("no-scroll");
+    if (returnFocus) toggle.focus();
   };
 
   const open = () => {
-    nav.classList.add("is-open");
+    list.classList.add("is-open");
     toggle.setAttribute("aria-expanded", "true");
-    toggle.setAttribute("aria-label", "Fechar menu");
-    document.body.classList.add("no-scroll");
+    list.querySelector("a")?.focus({ preventScroll: true });
   };
 
-  toggle.addEventListener("click", () => {
-    const isOpen = nav.classList.contains("is-open");
-    isOpen ? close() : open();
-  });
-
-  nav.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => close());
+  toggle.addEventListener("click", () => (isOpen() ? close() : open()));
+  list.addEventListener("click", (e) => {
+    if (e.target.closest("a")) close();
   });
 
   document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && nav.classList.contains("is-open")) close();
+    if (e.key === "Escape" && isOpen()) close({ returnFocus: true });
   });
 
   document.addEventListener("click", (e) => {
-    if (!nav.classList.contains("is-open")) return;
-    if (nav.contains(e.target) || toggle.contains(e.target)) return;
-    close();
+    if (isOpen() && !list.contains(e.target) && !toggle.contains(e.target)) close();
   });
 
+  // Ao passar para o layout de desktop, o menu volta ao estado padrão.
+  window.matchMedia("(min-width: 960px)").addEventListener("change", () => close());
+
   const onScroll = () => {
-    header.dataset.elevated = window.scrollY > 24 ? "true" : "false";
+    header.dataset.elevated = window.scrollY > 8 ? "true" : "false";
   };
   window.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
 }
 
 export function initActiveSection() {
-  const links = document.querySelectorAll(".primary-nav ul a");
-  const sections = Array.from(links)
-    .map((a) => document.querySelector(a.getAttribute("href")))
-    .filter(Boolean);
-
+  const links = [...document.querySelectorAll("[data-nav-list] a")];
+  const sections = links.map((a) => document.querySelector(a.hash)).filter(Boolean);
   if (!sections.length || !("IntersectionObserver" in window)) return;
 
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (!entry.isIntersecting) return;
-        const id = entry.target.id;
         links.forEach((link) => {
-          link.classList.toggle("is-active", link.getAttribute("href") === `#${id}`);
+          if (link.hash === `#${entry.target.id}`) link.setAttribute("aria-current", "true");
+          else link.removeAttribute("aria-current");
         });
       });
     },
-    { rootMargin: "-45% 0px -50% 0px", threshold: 0 }
+    { rootMargin: "-45% 0px -50% 0px" }
   );
 
   sections.forEach((section) => observer.observe(section));

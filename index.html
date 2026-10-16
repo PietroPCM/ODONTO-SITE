@@ -2,529 +2,523 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#fffdf9" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f9f8fb" />
 
-  <title>Dra. Aline Sanfelice | Odontopediatria em Cascavel — PR</title>
-  <meta name="description" content="Atendimento odontopediátrico leve e acolhedor em Cascavel, com cuidado individualizado para crianças e famílias. Conheça a Dra. Aline Sanfelice." />
+  <title>Dra. Aline Sanfelice · Odontopediatria em Cascavel, PR</title>
+  <meta name="description" content="Dentista de crianças no Centro de Cascavel. Consulta no tempo de cada criança, sedação odontológica após avaliação e famílias que voltam há anos. Fale com a Dra. Aline pelo WhatsApp." />
   <meta name="author" content="Dra. Aline Sanfelice" />
 
+  <!-- Defina a URL final do site em og:url e nas imagens absolutas quando o domínio estiver confirmado. -->
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="pt_BR" />
-  <meta property="og:title" content="Dra. Aline Sanfelice | Odontopediatria em Cascavel — PR" />
-  <meta property="og:description" content="Atendimento odontopediátrico leve e acolhedor em Cascavel, com cuidado individualizado para crianças e famílias." />
-  <meta property="og:image" content="assets/images/aline-perfil.svg" />
-
+  <meta property="og:site_name" content="Dra. Aline Sanfelice · Odontopediatria Avançada" />
+  <meta property="og:title" content="Dra. Aline Sanfelice · Odontopediatria em Cascavel" />
+  <meta property="og:description" content="Dentista de crianças no Centro de Cascavel. Primeiro a confiança, depois o tratamento." />
+  <meta property="og:image" content="/assets/og/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Dra. Aline Sanfelice no consultório, em frente aos arcos coloridos da parede" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Dra. Aline Sanfelice | Odontopediatria em Cascavel — PR" />
-  <meta name="twitter:description" content="Atendimento odontopediátrico leve e acolhedor em Cascavel." />
-  <meta name="twitter:image" content="assets/images/aline-perfil.svg" />
 
   <link rel="icon" href="favicon/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="preload" href="assets/fonts/young-serif-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="assets/fonts/figtree-latin.woff2" as="font" type="font/woff2" crossorigin />
 
-  <link rel="stylesheet" href="css/reset.css" />
-  <link rel="stylesheet" href="css/variables.css" />
-  <link rel="stylesheet" href="css/global.css" />
-  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/base.css" />
   <link rel="stylesheet" href="css/sections.css" />
-  <link rel="stylesheet" href="css/responsive.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "Aline Sanfelice · Odontopediatria Avançada",
+    "description": "Odontopediatria e sedação odontológica (mediante avaliação) em Cascavel, PR.",
+    "image": "/assets/photos/aline-retrato-1400.jpg",
+    "telephone": "+55 45 98433-3443",
+    "medicalSpecialty": "Pediatric",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "R. Fortaleza, 1850 - Centro",
+      "addressLocality": "Cascavel",
+      "addressRegion": "PR",
+      "postalCode": "85810-051",
+      "addressCountry": "BR"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": -24.9486741, "longitude": -53.4750656 },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "08:00",
+      "closes": "18:00"
+    }],
+    "sameAs": [
+      "https://www.instagram.com/alinesanfelice/",
+      "https://maps.app.goo.gl/1zPVbfsscRTXwTze8"
+    ]
+  }
+  </script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-  <header class="site-header" id="site-header" data-elevated="false">
-    <div class="container site-header__inner">
-      <a class="brand" href="#top" aria-label="Início — Aline Sanfelice Odontopediatria Avançada">
-        <span class="brand__mark" aria-hidden="true">
-          <svg viewBox="0 0 60 36" xmlns="http://www.w3.org/2000/svg" focusable="false">
-            <path d="M4 32 A26 26 0 0 1 56 32" fill="none" stroke="#f3cbd1" stroke-width="3" stroke-linecap="round"/>
-            <path d="M10 32 A20 20 0 0 1 50 32" fill="none" stroke="#f5dfa8" stroke-width="3" stroke-linecap="round"/>
-            <path d="M16 32 A14 14 0 0 1 44 32" fill="none" stroke="#cce4d8" stroke-width="3" stroke-linecap="round"/>
-            <path d="M22 32 A8 8 0 0 1 38 32" fill="none" stroke="#bddde7" stroke-width="3" stroke-linecap="round"/>
-            <path d="M30 18 C26 22 26 28 30 32 C34 28 34 22 30 18 Z" fill="#ffffff" stroke="#265f6b" stroke-width="1.4"/>
-          </svg>
-        </span>
-        <span class="brand__text">
-          <span class="brand__name">Aline Sanfelice</span>
-          <span class="brand__sub">Odontopediatria Avançada</span>
+  <header class="site-header" data-header>
+    <div class="site-header__inner wrap">
+      <a class="lockup" href="#topo" aria-label="Aline Sanfelice, Odontopediatria Avançada, voltar ao início">
+        <svg class="lockup__mark" viewBox="0 0 48 34" aria-hidden="true" focusable="false">
+          <path d="M3 32a21 21 0 0 1 42 0" stroke="#f2bfb3"/>
+          <path d="M8 32a16 16 0 0 1 32 0" stroke="#efdcae"/>
+          <path d="M13 32a11 11 0 0 1 22 0" stroke="#a8d5bf"/>
+          <path d="M18 32a6 6 0 0 1 12 0" stroke="#acd5dc" stroke-dasharray="2.2 2"/>
+        </svg>
+        <span class="lockup__text">
+          <span class="lockup__name">Aline Sanfelice</span>
+          <span class="lockup__sub">Odontopediatria Avançada</span>
         </span>
       </a>
 
-      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Abrir menu">
-        <span></span><span></span><span></span>
-      </button>
-
-      <nav class="primary-nav" id="primary-nav" aria-label="Navegação principal">
-        <ul>
-          <li><a href="#top">Início</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#atendimento">Atendimento</a></li>
-          <li><a href="#especialidades">Especialidades</a></li>
-          <li><a href="#equipe">Equipe</a></li>
+      <nav class="nav" aria-label="Seções do site">
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-list" data-nav-toggle>
+          <span class="nav__toggle-label">Menu</span>
+          <span class="nav__toggle-icon" aria-hidden="true"></span>
+        </button>
+        <ul class="nav__list" id="nav-list" data-nav-list>
+          <li><a href="#dra-aline">A Dra. Aline</a></li>
+          <li><a href="#consulta">A consulta</a></li>
+          <li><a href="#sedacao">Sedação</a></li>
           <li><a href="#duvidas">Dúvidas</a></li>
-          <li><a href="#localizacao">Localização</a></li>
-          <li><a href="#contato">Contato</a></li>
+          <li><a href="#familias">Famílias</a></li>
+          <li><a href="#onde">Onde fica</a></li>
         </ul>
-        <a class="button button--primary primary-nav__cta" href="#contato" data-cta="agendar">
-          Agendar atendimento
-        </a>
       </nav>
+
+      <a class="header-cta" href="https://wa.me/5545984333443?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Dra.%20Aline%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20atendimento." target="_blank" rel="noopener">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-whatsapp"/></svg>
+        <span>WhatsApp</span>
+      </a>
     </div>
   </header>
 
-  <main id="main">
-    <section class="hero" id="top">
-      <div class="hero__backdrop" aria-hidden="true">
-        <svg class="hero__arc" viewBox="0 0 800 800" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <linearGradient id="arcA" x1="0" x2="1" y1="0" y2="1">
-              <stop offset="0%" stop-color="#f3cbd1" stop-opacity="0.55"/>
-              <stop offset="100%" stop-color="#f3cbd1" stop-opacity="0"/>
-            </linearGradient>
-            <linearGradient id="arcB" x1="0" x2="1" y1="0" y2="1">
-              <stop offset="0%" stop-color="#f5dfa8" stop-opacity="0.55"/>
-              <stop offset="100%" stop-color="#f5dfa8" stop-opacity="0"/>
-            </linearGradient>
-            <linearGradient id="arcC" x1="0" x2="1" y1="0" y2="1">
-              <stop offset="0%" stop-color="#bddde7" stop-opacity="0.65"/>
-              <stop offset="100%" stop-color="#bddde7" stop-opacity="0"/>
-            </linearGradient>
-            <linearGradient id="arcD" x1="0" x2="1" y1="0" y2="1">
-              <stop offset="0%" stop-color="#ddd2ea" stop-opacity="0.55"/>
-              <stop offset="100%" stop-color="#ddd2ea" stop-opacity="0"/>
-            </linearGradient>
-          </defs>
-          <path d="M-100 640 A 540 540 0 0 1 900 640" stroke="url(#arcA)" stroke-width="38" fill="none" stroke-linecap="round"/>
-          <path d="M-60 640 A 480 480 0 0 1 860 640" stroke="url(#arcB)" stroke-width="32" fill="none" stroke-linecap="round"/>
-          <path d="M-20 640 A 420 420 0 0 1 820 640" stroke="url(#arcC)" stroke-width="26" fill="none" stroke-linecap="round"/>
-          <path d="M20 640 A 360 360 0 0 1 780 640" stroke="url(#arcD)" stroke-width="20" fill="none" stroke-linecap="round"/>
-        </svg>
-      </div>
+  <main id="conteudo">
+    <!-- 1 · Quem é -->
+    <section class="hero" id="topo" aria-labelledby="hero-title">
+      <div class="hero__grid wrap">
+        <figure class="hero__portrait arch">
+          <img
+            src="assets/photos/aline-retrato-960.jpg"
+            srcset="assets/photos/aline-retrato-640.jpg 640w, assets/photos/aline-retrato-960.jpg 960w, assets/photos/aline-retrato-1400.jpg 1400w"
+            sizes="(min-width: 960px) 38vw, 92vw"
+            width="1400" height="2100"
+            alt="Dra. Aline Sanfelice sorrindo, sentada à mesa do consultório, com painéis em arco nas cores pastel ao fundo"
+            fetchpriority="high" decoding="async" />
+        </figure>
 
-      <div class="container hero__grid">
-        <div class="hero__content">
-          <span class="eyebrow">
-            <span class="eyebrow__dot" aria-hidden="true"></span>
-            Odontopediatria avançada • Cascavel, PR
-          </span>
-          <h1 class="hero__title">
-            O cuidado que o sorriso do seu filho<em> merece.</em>
-          </h1>
-          <p class="hero__lead">
-            Atendimento odontopediátrico leve, seguro e acolhedor para que crianças e famílias construam uma relação mais tranquila com a saúde bucal.
-          </p>
+        <h1 class="hero__name" id="hero-title">
+          <span class="hero__first"><span class="hero__dra">Dra.</span> Aline</span>
+          <span class="hero__last">Sanfelice</span>
+        </h1>
+
+        <div class="hero__intro">
+          <p class="hero__lead">Dentista de crianças em Cascavel. Primeiro ela conquista a confiança do seu filho; o tratamento vem depois, no tempo dele.</p>
 
           <div class="hero__actions">
-            <a class="button button--primary" href="#contato" data-cta="whatsapp">
-              <span>Agendar pelo WhatsApp</span>
-              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.94.54 3.78 1.56 5.4L2 22l4.84-1.59a9.95 9.95 0 0 0 5.2 1.45h.01c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01A9.84 9.84 0 0 0 12.04 2zm0 18.03h-.01a8.13 8.13 0 0 1-4.15-1.13l-.3-.18l-2.87.94l.96-2.8l-.2-.31a8.13 8.13 0 0 1-1.24-4.34c0-4.5 3.66-8.16 8.16-8.16c2.18 0 4.23.85 5.78 2.39a8.12 8.12 0 0 1 2.38 5.78c0 4.5-3.66 8.16-8.16 8.16zm4.47-6.11c-.24-.12-1.45-.71-1.67-.79c-.22-.08-.39-.12-.55.12c-.16.24-.62.79-.76.95c-.14.16-.28.18-.52.06c-.24-.12-1.02-.38-1.94-1.2c-.72-.64-1.21-1.43-1.35-1.67c-.14-.24-.02-.37.1-.49c.11-.11.24-.28.36-.42c.12-.14.16-.24.24-.4c.08-.16.04-.3-.02-.42c-.06-.12-.55-1.33-.75-1.82c-.2-.48-.4-.41-.55-.42l-.47-.01c-.16 0-.42.06-.64.3c-.22.24-.84.82-.84 2c0 1.18.86 2.32.98 2.48c.12.16 1.7 2.6 4.13 3.65c.58.25 1.03.4 1.38.51c.58.18 1.11.16 1.53.1c.47-.07 1.45-.59 1.66-1.16c.21-.57.21-1.05.14-1.16c-.06-.11-.22-.18-.46-.3z"/></svg>
+            <a class="button button--primary" href="https://wa.me/5545984333443?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Dra.%20Aline%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20atendimento." target="_blank" rel="noopener">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-whatsapp"/></svg>
+              <span>Conversar no WhatsApp</span>
             </a>
-            <a class="button button--ghost" href="#atendimento">Conhecer o atendimento</a>
+            <a class="link-arrow" href="#consulta">
+              <span>Como é a consulta</span>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-arrow-down"/></svg>
+            </a>
           </div>
 
-          <ul class="hero__meta" aria-label="Informações principais">
-            <li><span>Odontopediatria avançada</span></li>
-            <li><span>Sedação odontológica</span></li>
-            <li><span>Cascavel — PR</span></li>
-            <li><span>CRO-PR 22438</span></li>
-          </ul>
+          <dl class="hero__facts">
+            <div>
+              <dt>Onde</dt>
+              <dd>R. Fortaleza, 1850 · Centro</dd>
+            </div>
+            <div>
+              <dt>Quando</dt>
+              <dd>Seg a sex, 8h às 18h</dd>
+            </div>
+            <div>
+              <dt>No Google</dt>
+              <!-- Nota e número conferidos no Google Maps em 16/10/2026. Atualize junto com o perfil. -->
+              <dd><a href="https://maps.app.goo.gl/1zPVbfsscRTXwTze8" target="_blank" rel="noopener">5,0 em 38 avaliações</a></dd>
+            </div>
+          </dl>
         </div>
-
-        <div class="hero__visual">
-          <div class="hero__portrait">
-            <div class="hero__frame">
-              <img src="assets/images/aline-perfil.svg" alt="Dra. Aline Sanfelice ao lado da identidade visual da clínica de odontopediatria" width="720" height="900" fetchpriority="high" />
-            </div>
-
-            <div class="hero__badge" aria-hidden="true">
-              <svg viewBox="0 0 40 40" width="22" height="22"><path fill="#265f6b" d="M20 6c-4 4-4 10 0 14c4-4 4-10 0-14zm-6 16c-3 0-6 2-6 6h24c0-4-3-6-6-6c-2 2-4 3-6 3s-4-1-6-3z"/></svg>
-              <div>
-                <strong>Dra. Aline Sanfelice</strong>
-                <span>CRO-PR 22438</span>
-              </div>
-            </div>
-
-            <div class="hero__quote" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="20" height="20" class="hero__quote-mark"><path fill="#bddde7" d="M7 7h5l-2 4h2v6H4v-6l3-4zm9 0h5l-2 4h2v6h-8v-6l3-4z"/></svg>
-              <p>“Cuidado que transforma a visita ao dentista em uma experiência de confiança.”</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="hero__scroll" aria-hidden="true">
-        <span></span>
-        <small>role para conhecer</small>
       </div>
     </section>
 
-    <section class="trust" aria-label="Pilares do atendimento">
-      <div class="container">
-        <ul class="trust__list">
-          <li><strong>Atendimento</strong> pensado para cada fase da infância</li>
-          <li><strong>Cuidado acolhedor</strong> para crianças e famílias</li>
-          <li><strong>Abordagem</strong> individualizada</li>
-          <li><strong>Atendimento</strong> em Cascavel</li>
+    <!-- 2 · A profissional, nas palavras dela -->
+    <section class="person" id="dra-aline" aria-labelledby="person-title">
+      <div class="person__grid wrap">
+        <div class="person__text">
+          <h2 class="section-title" id="person-title">Ela conquista a criança antes de cuidar do dente.</h2>
+          <p>A Dra. Aline Sanfelice é odontopediatra e atende crianças desde bebês. Há famílias que voltam com ela há anos, e elas costumam repetir as mesmas palavras: paciência, delicadeza, carinho.</p>
+          <p>A consulta é feita para a criança entender o que está acontecendo. Modelos de dentes, brinquedos e muita conversa ajudam o desconhecido a deixar de assustar.</p>
+        </div>
+
+        <blockquote class="person__quote">
+          <p>Atendo ele desde bem pequenininho, quando ainda tinha medo e chorava algumas vezes. Depois que eu conquistei a confiança dele, ele se transformou. Agora é super corajoso.</p>
+          <footer>Dra. Aline, respondendo a uma mãe no Google</footer>
+        </blockquote>
+
+        <figure class="person__photo">
+          <img src="assets/photos/brinquedos-913.jpg"
+               srcset="assets/photos/brinquedos-600.jpg 600w, assets/photos/brinquedos-913.jpg 913w"
+               sizes="(min-width: 960px) 34vw, 92vw"
+               width="913" height="890" loading="lazy" decoding="async"
+               alt="Dra. Aline sorrindo à mesa, segurando um brinquedo em forma de instrumento odontológico, com modelos de dentes e um dinossauro de brinquedo à frente" />
+          <figcaption>Modelos e brinquedos apresentam a consulta antes de ela começar.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 3 · Como é a consulta -->
+    <section class="journey" id="consulta" aria-labelledby="journey-title">
+      <div class="journey__grid wrap">
+        <div class="journey__aside">
+          <h2 class="section-title" id="journey-title">Como é a consulta</h2>
+          <p class="journey__intro">Sem pressa e sem surpresas. A criança conhece cada etapa antes de ela acontecer, e você acompanha tudo de perto.</p>
+
+          <div class="journey__arcs" aria-hidden="true">
+            <svg viewBox="0 0 240 128" data-arcs>
+              <path class="arc" style="--arc: var(--arco-rosa)" pathLength="1" d="M10 124a110 110 0 0 1 220 0"/>
+              <path class="arc" style="--arc: var(--arco-amarelo)" pathLength="1" d="M30 124a90 90 0 0 1 180 0"/>
+              <path class="arc" style="--arc: var(--arco-menta)" pathLength="1" d="M50 124a70 70 0 0 1 140 0"/>
+              <path class="arc arc--dashed" style="--arc: var(--arco-azul)" pathLength="1" d="M70 124a50 50 0 0 1 100 0"/>
+              <path class="arc" style="--arc: var(--lilas)" pathLength="1" d="M90 124a30 30 0 0 1 60 0"/>
+              <path class="tooth" d="M112.5 108.5c-1.6-4.6.9-8.3 4.6-8.3 1.3 0 2.1.6 2.9.6s1.6-.6 2.9-.6c3.7 0 6.2 3.7 4.6 8.3-.9 2.6-1.4 4.2-1.8 7.3-.3 2.2-2.6 2.5-3.1.4l-.9-3.9c-.4-1.6-2.9-1.6-3.3 0l-.9 3.9c-.5 2.1-2.8 1.8-3.1-.4-.4-3.1-.9-4.7-1.9-7.3z"/>
+            </svg>
+          </div>
+          <figure class="journey__photo">
+            <img src="assets/photos/atendimento-684.jpg" width="684" height="890" loading="lazy" decoding="async"
+                 alt="Dra. Aline atendendo uma menina deitada na cadeira, que segura um espelho para acompanhar o que está acontecendo" />
+            <figcaption>Espelho na mão: a criança vê o que está acontecendo.</figcaption>
+          </figure>
+        </div>
+
+        <ol class="steps" data-steps>
+          <li class="step" style="--arc: var(--arco-rosa)">
+            <span class="step__n" aria-hidden="true">1</span>
+            <h3>Uma primeira conversa</h3>
+            <p>Pelo WhatsApp, você conta a idade da criança, o que te preocupa e como foram as experiências anteriores. As primeiras dúvidas já se resolvem ali.</p>
+          </li>
+          <li class="step" style="--arc: var(--arco-amarelo)">
+            <span class="step__n" aria-hidden="true">2</span>
+            <h3>Conhecer o consultório</h3>
+            <p>A criança chega, olha, pergunta. Os brinquedos, o espelho e a TV no teto fazem parte da apresentação.</p>
+          </li>
+          <li class="step" style="--arc: var(--arco-menta)">
+            <span class="step__n" aria-hidden="true">3</span>
+            <h3>Avaliação no ritmo dela</h3>
+            <p>Cada instrumento é mostrado antes de ser usado. O tempo de adaptação é o da criança, não o da agenda.</p>
+          </li>
+          <li class="step" style="--arc: var(--arco-azul)">
+            <span class="step__n" aria-hidden="true">4</span>
+            <h3>Um plano conversado</h3>
+            <p>O tratamento é explicado para você com clareza, e cada decisão é tomada junto com a família.</p>
+          </li>
+          <li class="step" style="--arc: var(--lilas)">
+            <span class="step__n" aria-hidden="true">5</span>
+            <h3>O cuidado continua em casa</h3>
+            <p>Você sai com orientações de escovação, alimentação e prevenção para o dia a dia.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 4 · Quando a cadeira é difícil -->
+    <section class="care" id="sedacao" aria-labelledby="care-title">
+      <div class="care__grid wrap">
+        <figure class="care__photo">
+          <img src="assets/photos/sedacao-810.jpg"
+               srcset="assets/photos/sedacao-600.jpg 600w, assets/photos/sedacao-810.jpg 810w"
+               sizes="(min-width: 960px) 40vw, 92vw"
+               width="810" height="1080" loading="lazy" decoding="async"
+               alt="Dra. Aline e uma assistente atendendo uma criança sedada, coberta por uma manta, na cadeira do consultório" />
+          <figcaption>“Por aqui paciente monitorizada, sedada e quentinha.” <span>Dra. Aline, nos stories</span></figcaption>
+        </figure>
+
+        <div class="care__text">
+          <h2 class="section-title" id="care-title">Quando a cadeira é mais difícil</h2>
+          <p class="care__lead">Medo intenso, uma experiência ruim no passado, um tratamento mais longo, ou uma criança que tem mais dificuldade com o atendimento. Nesses casos, o caminho é planejado com ainda mais cuidado.</p>
+          <p>A sedação odontológica é um dos recursos possíveis, nunca o primeiro reflexo. Ela só é indicada depois de uma avaliação que considera:</p>
+          <ul class="care__list">
+            <li>a necessidade do procedimento;</li>
+            <li>a idade e o comportamento da criança;</li>
+            <li>o histórico de saúde e as experiências anteriores;</li>
+            <li>a segurança, antes de tudo.</li>
+          </ul>
+          <p>A decisão é sempre conversada com a família.</p>
+
+          <blockquote class="care__voice">
+            <p>Minha filha fez um procedimento com sedação com a Dra. Aline. Foi uma experiência incrível: ela se sentiu segura, não sentiu medo.</p>
+            <footer>Ana Paula D., no Google</footer>
+          </blockquote>
+
+          <a class="link-arrow link-arrow--light" href="https://wa.me/5545984333443?text=Ol%C3%A1%2C%20Dra.%20Aline!%20Gostaria%20de%20tirar%20d%C3%BAvidas%20sobre%20a%20seda%C3%A7%C3%A3o%20odontol%C3%B3gica." target="_blank" rel="noopener">
+            <span>Tirar dúvidas sobre sedação no WhatsApp</span>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 · Dúvidas dos pais -->
+    <section class="concerns" id="duvidas" aria-labelledby="concerns-title">
+      <div class="concerns__grid wrap">
+        <h2 class="section-title concerns__title" id="concerns-title">O que costuma preocupar os pais</h2>
+
+        <div class="concerns__list" data-concerns>
+          <h3 class="concern__head">
+            <button type="button" id="q1" aria-expanded="true" aria-controls="a1" data-concern>Meu filho tem medo de dentista</button>
+          </h3>
+          <div class="concern__body" id="a1" role="region" aria-labelledby="q1">
+            <p>É uma reação natural ao desconhecido. A consulta começa pela aproximação: conversar, mostrar, deixar tocar. A confiança vem antes do tratamento, e o ritmo é o da criança.</p>
+            <a class="link-arrow" href="https://wa.me/5545984333443?text=Ol%C3%A1%2C%20Dra.%20Aline!%20Meu%20filho%20tem%20medo%20de%20dentista%20e%20eu%20queria%20entender%20como%20%C3%A9%20o%20atendimento." target="_blank" rel="noopener"><span>Contar sobre o seu filho</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
+          </div>
+
+          <h3 class="concern__head">
+            <button type="button" id="q2" aria-expanded="false" aria-controls="a2" data-concern>É a primeira consulta</button>
+          </h3>
+          <div class="concern__body" id="a2" role="region" aria-labelledby="q2" hidden>
+            <p>A primeira visita é para a criança conhecer o espaço e a Dra. Aline, e para você tirar dúvidas com calma. Em casa, fale do dentista de forma natural e positiva, e nunca como ameaça.</p>
+            <a class="link-arrow" href="https://wa.me/5545984333443?text=Ol%C3%A1%2C%20Dra.%20Aline!%20Gostaria%20de%20agendar%20a%20primeira%20consulta%20do%20meu%20filho." target="_blank" rel="noopener"><span>Agendar a primeira consulta</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
+          </div>
+
+          <h3 class="concern__head">
+            <button type="button" id="q3" aria-expanded="false" aria-controls="a3" data-concern>Ele já teve uma experiência ruim</button>
+          </h3>
+          <div class="concern__body" id="a3" role="region" aria-labelledby="q3" hidden>
+            <p>Isso é levado em conta desde a primeira conversa. A confiança é reconstruída aos poucos, respeitando os limites da criança e sem comparações.</p>
+            <a class="link-arrow" href="https://wa.me/5545984333443?text=Ol%C3%A1%2C%20Dra.%20Aline!%20Meu%20filho%20j%C3%A1%20teve%20uma%20experi%C3%AAncia%20ruim%20no%20dentista%20e%20eu%20queria%20conversar%20sobre%20o%20atendimento." target="_blank" rel="noopener"><span>Conversar sobre isso</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
+          </div>
+
+          <h3 class="concern__head">
+            <button type="button" id="q4" aria-expanded="false" aria-controls="a4" data-concern>Ele tem mais dificuldade no atendimento</button>
+          </h3>
+          <div class="concern__body" id="a4" role="region" aria-labelledby="q4" hidden>
+            <p>Algumas crianças precisam de mais tempo, de mais previsibilidade ou de um plano diferente. Conte como é o seu filho antes da consulta: isso ajuda a preparar o atendimento para ele.</p>
+            <a class="link-arrow" href="https://wa.me/5545984333443?text=Ol%C3%A1%2C%20Dra.%20Aline!%20Meu%20filho%20tem%20mais%20dificuldade%20no%20atendimento%20e%20eu%20gostaria%20de%20conversar%20antes%20da%20consulta." target="_blank" rel="noopener"><span>Conversar antes da consulta</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
+          </div>
+
+          <h3 class="concern__head">
+            <button type="button" id="q5" aria-expanded="false" aria-controls="a5" data-concern>Com que idade começar?</button>
+          </h3>
+          <div class="concern__body" id="a5" role="region" aria-labelledby="q5" hidden>
+            <p>O acompanhamento pode começar ainda nos primeiros anos, antes de qualquer problema. Você recebe orientações de higiene, alimentação e desenvolvimento dos dentes. O momento certo para cada criança é conversado na consulta.</p>
+            <a class="link-arrow" href="https://wa.me/5545984333443?text=Ol%C3%A1%2C%20Dra.%20Aline!%20Gostaria%20de%20saber%20quando%20come%C3%A7ar%20o%20acompanhamento%20do%20meu%20filho." target="_blank" rel="noopener"><span>Perguntar sobre a idade do seu filho</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
+          </div>
+
+          <h3 class="concern__head">
+            <button type="button" id="q6" aria-expanded="false" aria-controls="a6" data-concern>Toda criança precisa de sedação?</button>
+          </h3>
+          <div class="concern__body" id="a6" role="region" aria-labelledby="q6" hidden>
+            <p>Não. A sedação é indicada só em situações específicas, depois de avaliação individual. Uma conversa ajuda a entender se ela faz ou não sentido para o seu filho.</p>
+            <a class="link-arrow" href="#sedacao"><span>Ler sobre sedação</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
+          </div>
+
+          <h3 class="concern__head">
+            <button type="button" id="q7" aria-expanded="false" aria-controls="a7" data-concern>Formas de pagamento</button>
+          </h3>
+          <div class="concern__body" id="a7" role="region" aria-labelledby="q7" hidden>
+            <p>Cartão de crédito, débito e pagamento por aproximação. Há opção de parcelamento; as condições são combinadas pelo WhatsApp.</p>
+            <a class="link-arrow" href="https://wa.me/5545984333443?text=Ol%C3%A1!%20Gostaria%20de%20saber%20sobre%20valores%20e%20formas%20de%20pagamento." target="_blank" rel="noopener"><span>Perguntar sobre valores</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6 · Famílias -->
+    <!-- Avaliações reais do Google Maps (lidas em 16/10/2026). Texto fiel ao original,
+         com pontuação normalizada; [colchetes] e […] marcam edições. Nomes: primeiro nome + inicial. -->
+    <section class="families" id="familias" aria-labelledby="families-title">
+      <div class="wrap">
+        <div class="families__head">
+          <h2 class="section-title" id="families-title">O que as famílias contam</h2>
+          <p class="families__source">5,0 no Google, em 38 avaliações. <a href="https://maps.app.goo.gl/1zPVbfsscRTXwTze8" target="_blank" rel="noopener">Ler todas no Google</a></p>
+        </div>
+
+        <div class="families__grid">
+          <blockquote class="review review--feature">
+            <p>Tem um cuidado diferenciado e uma atenção que não havia tido antes. Sendo mãe de criança atípica, é de profissionais como ela que precisamos: que tenham um cuidado muito além da profissão, um acolhimento. E ela tem, com certeza.</p>
+            <footer><span class="review__who">Dani D.</span><span class="review__ctx">mãe de criança atípica</span></footer>
+          </blockquote>
+
+          <blockquote class="review">
+            <p>Há anos ela acompanha meu filho, e ele ama vir na dentista dele. Paciência total com nossos pequenos.</p>
+            <footer><span class="review__who">Pryscila S.</span><span class="review__ctx">acompanha há anos</span></footer>
+          </blockquote>
+
+          <blockquote class="review">
+            <p>Minha bebê de 2 aninhos tem má formação na esmaltação dos dentinhos; toda vez de escovar era um caos. […] Graças ao trabalho da doutora, [ela] colabora na escovação, e o sorriso está ainda mais lindo e, principalmente, saudável.</p>
+            <footer><span class="review__who">Carolina S.</span><span class="review__ctx">bebê de 2 anos</span></footer>
+          </blockquote>
+
+          <blockquote class="review">
+            <p>A melhor profissional da cidade para atender crianças, principalmente as crianças TEA. Muito amor, empatia, cuidado.</p>
+            <footer><span class="review__who">Mariana F.</span><span class="review__ctx">sobre crianças TEA</span></footer>
+          </blockquote>
+
+          <blockquote class="review">
+            <p>Foram feitos os procedimentos de sedação para extração e canal. Trabalho muito bem feito; a nenê se recuperou muito rápido. Somos agradecidos pelo carinho e atenção.</p>
+            <footer><span class="review__who">Marcia L.</span><span class="review__ctx">sedação</span></footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7 · O consultório e onde fica -->
+    <section class="place" id="onde" aria-labelledby="place-title">
+      <div class="place__grid wrap">
+        <figure class="place__facade arch">
+          <img src="assets/photos/fachada-1000.jpg"
+               srcset="assets/photos/fachada-600.jpg 600w, assets/photos/fachada-1000.jpg 1000w"
+               sizes="(min-width: 960px) 34vw, 92vw"
+               width="1000" height="1333" loading="lazy" decoding="async"
+               alt="Fachada do consultório na Rua Fortaleza, com o letreiro Aline Sanfelice Odontopediatria Avançada, o arco-íris do logo e bichinhos de pelúcia na vitrine" />
+        </figure>
+
+        <div class="place__text">
+          <h2 class="section-title" id="place-title">Rua Fortaleza, 1850, no Centro de Cascavel</h2>
+          <p class="place__lead">Procure a fachada com o arco-íris no letreiro e os bichinhos de pelúcia na vitrine.</p>
+
+          <dl class="place__info">
+            <div><dt>Endereço</dt><dd>R. Fortaleza, 1850, Centro<br />Cascavel, PR · 85810-051</dd></div>
+            <div><dt>Horário</dt><dd>Segunda a sexta, 8h às 18h<br />Atendimento com hora marcada</dd></div>
+            <div><dt>De carro</dt><dd>Estacionamento no local</dd></div>
+            <div><dt>Acessibilidade</dt><dd>Entrada, estacionamento e banheiro acessíveis para cadeira de rodas</dd></div>
+            <div><dt>Contato</dt><dd><a href="tel:+5545984333443">(45) 98433-3443</a>, WhatsApp e ligação</dd></div>
+          </dl>
+
+          <div class="place__actions">
+            <a class="button button--primary" href="https://www.google.com/maps/dir/?api=1&amp;destination=R.%20Fortaleza%2C%201850%20-%20Centro%2C%20Cascavel%20-%20PR%2C%2085810-051" target="_blank" rel="noopener">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-route"/></svg>
+              <span>Como chegar</span>
+            </a>
+            <a class="link-arrow" href="https://waze.com/ul?ll=-24.9486741,-53.4750656&amp;navigate=yes" target="_blank" rel="noopener"><span>Abrir no Waze</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
+          </div>
+
+          <div class="place__map" data-map>
+            <p class="place__map-row">O mapa do Google só carrega se você pedir. <button class="link-arrow" type="button" data-map-load><span>Mostrar mapa do Google</span></button></p>
+            <template data-map-template>
+              <iframe title="Mapa: R. Fortaleza, 1850, Centro, Cascavel, PR"
+                      src="https://www.google.com/maps?q=R.%20Fortaleza%2C%201850%2C%20Centro%2C%20Cascavel%20-%20PR&amp;output=embed"
+                      loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+            </template>
+          </div>
+        </div>
+
+        <div class="place__room">
+          <figure class="place__photo">
+            <img src="assets/photos/consultorio-1080.jpg"
+                 srcset="assets/photos/consultorio-540.jpg 540w, assets/photos/consultorio-1080.jpg 1080w"
+                 sizes="(min-width: 960px) 22vw, 60vw"
+                 width="1080" height="1920" loading="lazy" decoding="async"
+                 alt="Sala de atendimento com uma criança deitada na cadeira e uma TV instalada no teto, acima dela" />
+            <figcaption>A TV no teto distrai quem está deitado na cadeira.</figcaption>
+          </figure>
+          <blockquote class="place__voice">
+            <p>O novo consultório está lindo e o atendimento perfeito, como sempre! Minha filha adora a Dra. Aline!</p>
+            <footer>Thais S., no Google</footer>
+          </blockquote>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 8 · Equipe (secundária) -->
+    <section class="team" aria-labelledby="team-title">
+      <div class="team__grid wrap">
+        <div class="team__intro">
+          <h2 class="team__title" id="team-title">No mesmo consultório</h2>
+          <p>Quando o tratamento pede outra especialidade, a Dra. Aline conta com colegas no mesmo espaço.</p>
+        </div>
+        <ul class="team__list">
+          <li><span class="team__name">Dra. Rayssa</span><span class="team__area">Ortodontia e ortopedia facial</span></li>
+          <li><span class="team__name">Dr. João Francisco</span><span class="team__area">Cirurgia oral e facial</span></li>
+          <li><span class="team__name">Dra. Micheli</span><span class="team__area">Endodontia</span></li>
         </ul>
       </div>
     </section>
 
-    <section class="about" id="sobre">
-      <div class="container about__grid">
-        <div class="about__visual">
-          <figure class="about__figure about__figure--main">
-            <img src="assets/images/aline-clinica.svg" alt="Dra. Aline Sanfelice em momento de atendimento infantil com brinquedos lúdicos" loading="lazy" width="640" height="780" />
-          </figure>
-          <div class="about__sticker" aria-hidden="true">
-            <svg viewBox="0 0 100 60" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5 50 A45 45 0 0 1 95 50" stroke="#f3cbd1" stroke-width="6" fill="none" stroke-linecap="round"/>
-              <path d="M15 50 A35 35 0 0 1 85 50" stroke="#f5dfa8" stroke-width="6" fill="none" stroke-linecap="round"/>
-              <path d="M25 50 A25 25 0 0 1 75 50" stroke="#cce4d8" stroke-width="6" fill="none" stroke-linecap="round"/>
-            </svg>
-            <span>cuidado acolhedor</span>
-          </div>
-        </div>
-
-        <div class="about__content">
-          <span class="eyebrow">Sobre a Dra. Aline</span>
-          <h2 class="section-title">
-            Um atendimento que começa <em>antes mesmo</em> de sentar na cadeira.
-          </h2>
-          <p>
-            Cada criança possui seu próprio tempo, suas experiências e sua forma de demonstrar insegurança. Por isso, o atendimento é conduzido com escuta, paciência e respeito, criando uma relação de confiança que favorece tanto o cuidado atual quanto os hábitos de saúde bucal para o futuro.
-          </p>
-          <p>
-            A proposta é tornar cada etapa mais compreensível para a criança e mais tranquila para a família — do primeiro contato ao acompanhamento ao longo do tempo.
-          </p>
-
-          <ul class="about__pillars">
-            <li>
-              <span class="about__pillar-mark" aria-hidden="true">01</span>
-              <div>
-                <h3>Acolhimento</h3>
-                <p>Comunicação clara, sem pressão e respeitando o ritmo de cada criança.</p>
-              </div>
-            </li>
-            <li>
-              <span class="about__pillar-mark" aria-hidden="true">02</span>
-              <div>
-                <h3>Adaptação gradual</h3>
-                <p>Apresentar o ambiente e cada etapa de forma compreensível para o pequeno paciente.</p>
-              </div>
-            </li>
-            <li>
-              <span class="about__pillar-mark" aria-hidden="true">03</span>
-              <div>
-                <h3>Cuidado individualizado</h3>
-                <p>Avaliação e planejamento conforme a necessidade e o histórico de cada criança.</p>
-              </div>
-            </li>
-            <li>
-              <span class="about__pillar-mark" aria-hidden="true">04</span>
-              <div>
-                <h3>Parceria com os pais</h3>
-                <p>Orientações práticas para prevenção e continuidade do cuidado em casa.</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="journey" id="atendimento">
-      <div class="container">
-        <header class="section-header section-header--centered">
-          <span class="eyebrow">Como funciona</span>
-          <h2 class="section-title">Uma jornada pensada para crianças e suas famílias.</h2>
-          <p class="section-lead">Cada etapa foi desenhada para reduzir inseguranças e construir confiança aos poucos, no ritmo da criança.</p>
-        </header>
-
-        <ol class="journey__steps" id="journey-steps"></ol>
-      </div>
-    </section>
-
-    <section class="specialties" id="especialidades">
-      <div class="container">
-        <header class="section-header">
-          <div>
-            <span class="eyebrow">Especialidades e tratamentos</span>
-            <h2 class="section-title">Cuidados que acompanham cada fase do <em>desenvolvimento</em>.</h2>
-          </div>
-          <p class="section-lead">
-            Da prevenção aos procedimentos mais complexos, o atendimento é conduzido com responsabilidade e linguagem acessível para os responsáveis.
-          </p>
-        </header>
-
-        <div class="specialties__grid" id="specialties-grid"></div>
-
-        <p class="specialties__note">
-          A indicação de cada procedimento depende de avaliação individual realizada por profissional habilitado.
-        </p>
-      </div>
-    </section>
-
-    <section class="sedation">
-      <div class="container sedation__grid">
-        <div class="sedation__content">
-          <span class="eyebrow eyebrow--light">Sedação odontológica</span>
-          <h2 class="section-title section-title--light">
-            Quando o cuidado também precisa trazer <em>mais tranquilidade</em>.
-          </h2>
-          <p>
-            A sedação odontológica pode ser considerada em situações específicas, mediante avaliação individual. Sua indicação depende de fatores como a necessidade do procedimento, a idade, o comportamento, o histórico e a segurança do paciente.
-          </p>
-          <p>
-            Não é uma solução universal nem um recurso aplicado de forma automática. A conversa com a família é parte essencial dessa decisão.
-          </p>
-          <a class="button button--light" href="#contato">Conversar sobre o atendimento</a>
-        </div>
-        <aside class="sedation__panel" aria-label="Pontos considerados na avaliação">
-          <h3>O que é considerado na avaliação</h3>
-          <ul>
-            <li>Necessidade clínica do procedimento</li>
-            <li>Idade e comportamento da criança</li>
-            <li>Histórico médico e odontológico</li>
-            <li>Segurança e indicação profissional</li>
-            <li>Diálogo com os responsáveis</li>
-          </ul>
-        </aside>
-      </div>
-    </section>
-
-    <section class="ambience">
-      <div class="container ambience__grid">
-        <div class="ambience__content">
-          <span class="eyebrow">Ambiente e experiência</span>
-          <h2 class="section-title">
-            Um espaço preparado para <em>acolher,</em> explicar e criar confiança.
-          </h2>
-          <p>
-            O ambiente, a comunicação e a maneira como cada etapa é apresentada fazem parte da experiência. Elementos lúdicos ajudam a criança a conhecer o universo odontológico de forma mais leve, enquanto os responsáveis acompanham todo o processo com mais clareza.
-          </p>
-          <ul class="ambience__list">
-            <li>Linguagem adaptada ao universo da criança</li>
-            <li>Recursos lúdicos para reduzir o medo do desconhecido</li>
-            <li>Participação dos responsáveis em cada etapa</li>
-          </ul>
-        </div>
-        <div class="ambience__media">
-          <figure class="ambience__figure ambience__figure--a">
-            <img src="assets/images/aline-brinquedos.svg" alt="Dra. Aline com brinquedos odontológicos utilizados no atendimento infantil" loading="lazy" width="640" height="640" />
-          </figure>
-          <figure class="ambience__figure ambience__figure--b">
-            <img src="assets/images/clinica-fachada.svg" alt="Fachada da clínica Aline Sanfelice Odontopediatria Avançada em Cascavel" loading="lazy" width="480" height="600" />
-          </figure>
-          <div class="ambience__chip" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="18" height="18"><path fill="#265f6b" d="M12 2l2.4 5 5.6.8-4 3.9.9 5.6L12 14.8 7.1 17.3 8 11.7 4 7.8l5.6-.8L12 2z"/></svg>
-            ambiente acolhedor
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="team" id="equipe">
-      <div class="container">
-        <header class="section-header section-header--centered">
-          <span class="eyebrow">Equipe clínica</span>
-          <h2 class="section-title">Diferentes especialidades, o mesmo compromisso com o <em>cuidado.</em></h2>
-          <p class="section-lead">
-            Profissionais com áreas de atuação complementares para um atendimento mais completo, com foco em segurança, acolhimento e individualização.
-          </p>
-        </header>
-        <div class="team__grid" id="team-grid"></div>
-      </div>
-    </section>
-
-    <section class="concerns">
-      <div class="container">
-        <header class="section-header">
-          <div>
-            <span class="eyebrow">Para pais e responsáveis</span>
-            <h2 class="section-title">Toda dúvida tem espaço em uma conversa cuidadosa.</h2>
-          </div>
-          <p class="section-lead">
-            Reunimos algumas situações comuns relatadas por famílias. Toque em cada uma para ler uma resposta acolhedora e responsável.
-          </p>
-        </header>
-        <div class="concerns__panel" id="concerns-panel"></div>
-      </div>
-    </section>
-
-    <section class="faq" id="duvidas">
-      <div class="container faq__grid">
-        <div class="faq__intro">
-          <span class="eyebrow">Perguntas frequentes</span>
-          <h2 class="section-title">Tudo que costuma surgir <em>antes</em> da primeira consulta.</h2>
-          <p>Se a sua dúvida não estiver aqui, fale com a clínica pelo WhatsApp. Sempre que possível, é melhor uma conversa direta com a equipe.</p>
-        </div>
-        <div class="faq__list" id="faq-list"></div>
-      </div>
-    </section>
-
-    <section class="location" id="localizacao">
-      <div class="container location__grid">
-        <div class="location__content">
-          <span class="eyebrow">Localização</span>
-          <h2 class="section-title">No coração de Cascavel, em um espaço pensado para <em>famílias</em>.</h2>
-          <p>A clínica fica no Centro, com fácil acesso para quem se desloca pelo município ou pela região oeste do Paraná.</p>
-          <ul class="location__info">
-            <li>
-              <strong>Endereço</strong>
-              <span>R. Fortaleza, 1850 — Centro<br/>Cascavel — PR • 85810-051</span>
-            </li>
-            <li>
-              <strong>Horários</strong>
-              <span>Segunda a sexta • até às 18h</span>
-            </li>
-            <li>
-              <strong>Contato direto</strong>
-              <span><a href="tel:+5545984333443">(45) 98433-3443</a></span>
-            </li>
-          </ul>
-          <a class="button button--primary" href="https://maps.app.goo.gl/1zPVbfsscRTXwTze8" target="_blank" rel="noopener">
-            <span>Abrir no Google Maps</span>
-            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"/></svg>
+    <!-- 9 · Fechamento -->
+    <section class="closing" aria-labelledby="closing-title" data-closing>
+      <div class="closing__inner wrap">
+        <h2 class="closing__title" id="closing-title">A primeira conversa pode ser por mensagem.</h2>
+        <p>Conte a idade do seu filho e o que te preocupa. A Dra. Aline e a equipe respondem pelo WhatsApp.</p>
+        <div class="closing__actions">
+          <a class="button button--light button--large" href="https://wa.me/5545984333443?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Dra.%20Aline%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20atendimento." target="_blank" rel="noopener">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-whatsapp"/></svg>
+            <span>Conversar no WhatsApp</span>
           </a>
+          <a class="closing__phone" href="tel:+5545984333443">ou ligue (45) 98433-3443</a>
         </div>
-        <div class="location__map">
-          <iframe
-            title="Mapa da localização — R. Fortaleza, 1850, Cascavel-PR"
-            src="https://www.google.com/maps?q=R.%20Fortaleza%2C%201850%2C%20Centro%2C%20Cascavel%20-%20PR&output=embed"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            allowfullscreen></iframe>
-          <div class="location__pin" aria-hidden="true">
-            <span class="location__pin-dot"></span>
-            <strong>Aline Sanfelice</strong>
-            <small>Odontopediatria Avançada</small>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact" id="contato">
-      <div class="container contact__grid">
-        <div class="contact__intro">
-          <span class="eyebrow">Contato</span>
-          <h2 class="section-title">Uma experiência mais tranquila pode começar com uma <em>conversa.</em></h2>
-          <p>Entre em contato para tirar dúvidas e conhecer melhor a proposta de atendimento. Respondemos em horário comercial.</p>
-
-          <ul class="contact__info" id="contact-info">
-            <li data-info="city"><strong>Cidade</strong><span>Cascavel — PR</span></li>
-            <li data-info="instagram"><strong>Instagram</strong><a href="https://www.instagram.com/alinesanfelice/" target="_blank" rel="noopener">@alinesanfelice</a></li>
-            <li data-info="cro"><strong>Responsável técnica</strong><span>Dra. Aline Sanfelice • CRO-PR 22438</span></li>
-            <li data-info="phone" hidden><strong>Telefone</strong><a href="#"></a></li>
-            <li data-info="whatsapp" hidden><strong>WhatsApp</strong><a href="#" target="_blank" rel="noopener"></a></li>
-            <li data-info="email" hidden><strong>E-mail</strong><a href="#"></a></li>
-            <li data-info="address" hidden><strong>Endereço</strong><span></span></li>
-            <li data-info="hours" hidden><strong>Horários</strong><span></span></li>
-          </ul>
-        </div>
-
-        <form class="contact__form" id="contact-form" novalidate>
-          <div class="field">
-            <label for="responsavel">Nome do responsável</label>
-            <input type="text" id="responsavel" name="responsavel" required autocomplete="name" />
-            <small class="field__error" data-error-for="responsavel"></small>
-          </div>
-
-          <div class="field">
-            <label for="telefone">Telefone</label>
-            <input type="tel" id="telefone" name="telefone" required autocomplete="tel" placeholder="(45) 9 0000-0000" />
-            <small class="field__error" data-error-for="telefone"></small>
-          </div>
-
-          <div class="field">
-            <label for="crianca">Nome ou idade da criança <span>(opcional)</span></label>
-            <input type="text" id="crianca" name="crianca" />
-          </div>
-
-          <div class="field">
-            <label for="assunto">Assunto</label>
-            <select id="assunto" name="assunto" required>
-              <option value="">Selecione um assunto</option>
-              <option value="Primeira consulta">Primeira consulta</option>
-              <option value="Acompanhamento">Acompanhamento</option>
-              <option value="Sedação odontológica">Sedação odontológica</option>
-              <option value="Ortodontia">Ortodontia</option>
-              <option value="Outras dúvidas">Outras dúvidas</option>
-            </select>
-            <small class="field__error" data-error-for="assunto"></small>
-          </div>
-
-          <div class="field field--full">
-            <label for="mensagem">Mensagem</label>
-            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-            <small class="field__error" data-error-for="mensagem"></small>
-          </div>
-
-          <div class="field field--full field--check">
-            <label>
-              <input type="checkbox" id="autorizacao" name="autorizacao" required />
-              <span>Autorizo o contato da clínica pelos dados informados.</span>
-            </label>
-            <small class="field__error" data-error-for="autorizacao"></small>
-          </div>
-
-          <button type="submit" class="button button--primary contact__submit">
-            <span>Enviar pelo WhatsApp</span>
-          </button>
-
-          <p class="contact__feedback" id="contact-feedback" role="status" aria-live="polite"></p>
-        </form>
+        <dl class="closing__facts">
+          <div><dt>Atendimento</dt><dd>Segunda a sexta, 8h às 18h, com hora marcada</dd></div>
+          <div><dt>Endereço</dt><dd>R. Fortaleza, 1850, Centro, Cascavel</dd></div>
+          <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/alinesanfelice/" target="_blank" rel="noopener">@alinesanfelice</a></dd></div>
+        </dl>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container site-footer__grid">
+    <div class="site-footer__grid wrap">
       <div class="site-footer__brand">
-        <span class="brand__name">Aline Sanfelice</span>
-        <span class="brand__sub">Odontopediatria Avançada</span>
-        <p>Atendimento odontopediátrico em Cascavel — Paraná.</p>
+        <svg class="lockup__mark" viewBox="0 0 48 34" aria-hidden="true" focusable="false">
+          <path d="M3 32a21 21 0 0 1 42 0" stroke="#f2bfb3"/>
+          <path d="M8 32a16 16 0 0 1 32 0" stroke="#efdcae"/>
+          <path d="M13 32a11 11 0 0 1 22 0" stroke="#a8d5bf"/>
+          <path d="M18 32a6 6 0 0 1 12 0" stroke="#acd5dc" stroke-dasharray="2.2 2"/>
+        </svg>
+        <p class="site-footer__name">Aline Sanfelice</p>
+        <p class="site-footer__sub">Odontopediatria Avançada</p>
+        <p class="site-footer__cro">Responsável técnica: Dra. Aline Sanfelice · CRO-PR 22438</p>
       </div>
 
-      <nav class="site-footer__nav" aria-label="Navegação do rodapé">
-        <h3>Navegação</h3>
-        <ul>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#atendimento">Atendimento</a></li>
-          <li><a href="#especialidades">Especialidades</a></li>
-          <li><a href="#equipe">Equipe</a></li>
-          <li><a href="#duvidas">Dúvidas</a></li>
-          <li><a href="#localizacao">Localização</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
+      <div class="site-footer__col">
+        <p class="site-footer__label">Visite</p>
+        <p>R. Fortaleza, 1850, Centro<br />Cascavel, PR · 85810-051<br />Seg a sex, 8h às 18h</p>
+      </div>
 
-      <div class="site-footer__contact" id="site-footer-contact">
-        <h3>Contato</h3>
+      <div class="site-footer__col">
+        <p class="site-footer__label">Fale</p>
         <ul>
+          <li><a href="https://wa.me/5545984333443?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Dra.%20Aline%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20atendimento." target="_blank" rel="noopener">WhatsApp (45) 98433-3443</a></li>
           <li><a href="https://www.instagram.com/alinesanfelice/" target="_blank" rel="noopener">Instagram @alinesanfelice</a></li>
-          <li data-info="whatsapp" hidden><a href="#" target="_blank" rel="noopener">WhatsApp</a></li>
-          <li data-info="phone" hidden><a href="#"></a></li>
-          <li data-info="email" hidden><a href="#"></a></li>
-          <li data-info="address" hidden><span></span></li>
+          <li><a href="https://maps.app.goo.gl/1zPVbfsscRTXwTze8" target="_blank" rel="noopener">Perfil no Google</a></li>
         </ul>
-        <p class="site-footer__cro">CRO-PR 22438 • Resp. técnica Dra. Aline Sanfelice</p>
       </div>
 
-      <div class="site-footer__notice">
-        <p>As informações apresentadas neste site possuem caráter informativo e não substituem uma avaliação odontológica individual.</p>
-        <p>&copy; <span id="footer-year"></span> Aline Sanfelice — Odontopediatria Avançada.</p>
-      </div>
+      <p class="site-footer__note">As informações deste site têm caráter informativo e não substituem uma avaliação odontológica individual. © <span data-year>2026</span> Aline Sanfelice · Odontopediatria Avançada.</p>
     </div>
   </footer>
 
-  <a class="whatsapp-floating" id="whatsapp-floating" href="#" target="_blank" rel="noopener" aria-label="Falar pelo WhatsApp" hidden>
-    <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.94.54 3.78 1.56 5.4L2 22l4.84-1.59a9.95 9.95 0 0 0 5.2 1.45h.01c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01A9.84 9.84 0 0 0 12.04 2zm4.47 11.92c-.24-.12-1.45-.71-1.67-.79c-.22-.08-.39-.12-.55.12c-.16.24-.62.79-.76.95c-.14.16-.28.18-.52.06c-.24-.12-1.02-.38-1.94-1.2c-.72-.64-1.21-1.43-1.35-1.67c-.14-.24-.02-.37.1-.49c.11-.11.24-.28.36-.42c.12-.14.16-.24.24-.4c.08-.16.04-.3-.02-.42c-.06-.12-.55-1.33-.75-1.82c-.2-.48-.4-.41-.55-.42l-.47-.01c-.16 0-.42.06-.64.3c-.22.24-.84.82-.84 2c0 1.18.86 2.32.98 2.48c.12.16 1.7 2.6 4.13 3.65c.58.25 1.03.4 1.38.51c.58.18 1.11.16 1.53.1c.47-.07 1.45-.59 1.66-1.16c.21-.57.21-1.05.14-1.16c-.06-.11-.22-.18-.46-.3z"/></svg>
-    <span>Falar pelo WhatsApp</span>
-  </a>
+  <!-- Barra fixa de contato (celular) -->
+  <div class="dock" data-dock>
+    <a class="dock__link" href="https://wa.me/5545984333443?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Dra.%20Aline%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20atendimento." target="_blank" rel="noopener">
+      <span class="dock__text">
+        <span class="dock__title">Conversar com a Dra. Aline</span>
+        <span class="dock__meta">WhatsApp · seg a sex, 8h às 18h</span>
+      </span>
+      <span class="dock__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-whatsapp"/></svg></span>
+    </a>
+  </div>
+
+  <!-- Ícones -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.94.54 3.78 1.56 5.4L2 22l4.84-1.59a9.95 9.95 0 0 0 5.2 1.45h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.84 9.84 0 0 0 12.04 2zm0 18.03h-.01a8.13 8.13 0 0 1-4.15-1.13l-.3-.18-2.87.94.96-2.8-.2-.31a8.13 8.13 0 0 1-1.24-4.34c0-4.5 3.66-8.16 8.16-8.16 2.18 0 4.23.85 5.78 2.39a8.12 8.12 0 0 1 2.38 5.78c0 4.5-3.66 8.16-8.16 8.16zm4.47-6.11c-.24-.12-1.45-.71-1.67-.79-.22-.08-.39-.12-.55.12-.16.24-.62.79-.76.95-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.21-1.43-1.35-1.67-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.75-1.82-.2-.48-.4-.41-.55-.42h-.47c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.6 4.13 3.65.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.45-.59 1.66-1.16.21-.57.21-1.05.14-1.16-.06-.11-.22-.18-.46-.3z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-5-5 5 5-5 5"/></symbol>
+    <symbol id="i-arrow-down" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" d="M12 5v14m-5-5 5 5 5-5"/></symbol>
+    <symbol id="i-route" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4" fill="none" stroke="currentColor" stroke-width="1.75"/></symbol>
+  </svg>
 
   <script type="module" src="js/main.js"></script>
 </body>

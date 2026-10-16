@@ -1,0 +1,10 @@
+.DS_Store
+.vercel
+
+# Impeccable: capturas de QA e rodadas de decisão (artefatos locais)
+.impeccable/review/
+.impeccable/mocks/
+.impeccable/live/
+.impeccable/decision-*.json
+.impeccable/config.local.json
+.impeccable/questions/

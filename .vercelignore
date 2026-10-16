@@ -1,0 +1,6 @@
+# Arquivos de projeto que não devem ser servidos publicamente
+.impeccable
+PRODUCT.md
+DESIGN.md
+README.md
+.gitignore
