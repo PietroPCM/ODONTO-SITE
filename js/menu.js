@@ -44,7 +44,7 @@ export function initMenu() {
 }
 
 export function initActiveSection() {
-  const links = [...document.querySelectorAll("[data-nav-list] a")];
+  const links = [...document.querySelectorAll("[data-nav-list] a[href^='#']")];
   const sections = links.map((a) => document.querySelector(a.hash)).filter(Boolean);
   const top = document.querySelector("#topo");
   if (top) sections.push(top);

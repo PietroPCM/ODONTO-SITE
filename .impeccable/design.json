@@ -405,8 +405,13 @@
       },
       {
         "name": "hero-entrance",
-        "value": "photo 1.2s scale 1.05 to 1; info cards 0.9s rise 10px, staggered 0.35s and 0.5s",
+        "value": "rainbow bands draw 1.5s stroke-dashoffset, staggered 0.11s (dashed band fades); photo 1.2s scale 1.05 to 1; info cards 0.9s rise 10px, staggered 0.35s and 0.5s",
         "purpose": "Hero load only; disabled under prefers-reduced-motion."
+      },
+      {
+        "name": "rail-draw",
+        "value": "rail clip-path 1.4s (desktop) or 0.9s per segment staggered 0.28s (mobile); stop ring 1.1s, 0 to 14px band-colour shadow",
+        "purpose": "First-visit rail, once when the section enters view; skipped under prefers-reduced-motion."
       },
       {
         "name": "gallery-zoom",
@@ -515,7 +520,7 @@
     "keyCharacteristics": [
       "White ground; logo-derived pastel fields (`-50` tints) for hero, closing, cards and avatars.",
       "Azul Aline as the only strong colour; every heading and primary action uses it.",
-      "The logo's dashed azul band reappears as a structural device (first-visit rail, hero arc).",
+      "The logo's rainbow frames the doctor: her arched portrait sits inside the five logo bands. The dashed azul band reappears as the first-visit rail.",
       "Rounded geometry at three radii plus pill; soft, navy-tinted shadows.",
       "Real photos only, in large rounded frames."
     ],

@@ -144,7 +144,8 @@ Density is relaxed. Sections breathe on a fluid vertical rhythm, and white secti
 **Key Characteristics:**
 - White ground; logo-derived pastel fields (`-50` tints) for hero, closing, cards and avatars.
 - Azul Aline as the only strong colour; every heading and primary action uses it.
-- The logo's dashed azul band reappears as a structural device (first-visit rail, hero arc).
+- The logo's rainbow frames the doctor: her portrait sits in an arched frame inside the five logo bands, as the tooth sits inside the rainbow in the mark.
+- The logo's dashed azul band reappears as a structural device (first-visit rail).
 - Rounded geometry at three radii plus pill; soft, navy-tinted shadows.
 - Real photos only, in large rounded frames.
 
@@ -204,10 +205,10 @@ A white page voiced in one deep blue, coloured by the soft bands of the official
 
 Single-column, mobile-first page inside a 1240px container with a fluid gutter (`gutter`). Sections use `xl` vertical padding; section heads (max 44rem) sit `l` above their content. Backgrounds alternate white and Fundo Suave (first visit, clinic gallery and FAQ are tinted); the hero and the closing sit on Lilás 50.
 
-Breakpoints: 600px (hero info cards appear, hero buttons stop stretching), 760px (two-column grids), 960px (hero, about, FAQ, place and gallery go two-column or bento), 1080px (desktop navigation, five-column steps, three-column service and review bentos).
+Breakpoints: 600px (hero buttons stop stretching, the hero portrait grows), 760px (two-column grids), 960px (hero, about, FAQ, place and gallery go two-column or bento), 1080px (desktop navigation, five-column steps, three-column service and review bentos).
 
 Recurring compositions:
-- **Hero:** text left, portrait right on desktop; on mobile the photo comes first in a landscape crop. The trust strip overlaps the hero's base.
+- **Hero:** text left, the arched portrait inside the rainbow right on desktop, with the address and hours cards (960px and up); on mobile the arched portrait and its rainbow come first, centred, and the headline, lead and WhatsApp button still fit the first 844px. The trust strip overlaps the hero's base.
 - **Bento grids:** services (one tall Azul Aline feature card spanning two rows, tinted cards, a wide team card); reviews (one large Lilás 50 review spanning two columns and two rows); gallery (the treatment room as the large tile spanning three columns and two rows, two square tiles stacked beside it, an Azul Aline quote tile on the bottom row).
 - **Sticky intro:** the FAQ intro sticks beside the list on desktop.
 
@@ -228,7 +229,7 @@ A hybrid: most surfaces are flat colour fields, and white cards that float over 
 
 Rounded throughout, in three steps plus pill: gently rounded (`sm`) for small floating info cards, the photo badge and menu links; rounded (`md`) for cards, gallery tiles, FAQ items, the trust strip and the map; soft-large (`lg`) for big photo frames and the place card; pill for every button, the nav toggle, caption chips and desktop nav links. Circles for step stops, avatars and icon discs; service icon tiles use 16px.
 
-The logo's arc and dashed band are the only recurring geometry: the five-band rainbow arc (azul band dashed) behind the hero portrait on desktop, and the dashed first-visit rail.
+The logo's arc and dashed band are the only recurring geometry. The hero portrait is an arch (a semicircular top, `lg` bottom corners), echoing the arched panels of the clinic and the logo, and the five bands (azul dashed) run around it as concentric arches with legs, in logo order from rosa outside to lilás inside, at every size. The dashed first-visit rail is the second use.
 
 ## Components
 
@@ -247,25 +248,28 @@ Confident, rounded and simple.
 - **Internal Padding:** `m`, growing to `l` for the feature tile of a bento.
 
 ### Navigation
-Sticky white header (76px) with the official horizontal logo lockup on the left (58px tall, 48px on small screens), pill text links in Figtree 550 that gain a Fundo Suave fill on hover or when current, and a small primary WhatsApp button. Once scrolled the header gains a Linha hairline and a soft navy shadow. Below 1080px a pill "Menu" toggle opens a floating white panel (`md` radius, Float shadow).
+Sticky white header (76px) with the official horizontal logo lockup on the left (58px tall, 48px on small screens), pill text links in Figtree 550 that gain a Fundo Suave fill on hover or when current, and a small primary WhatsApp button. Once scrolled the header gains a Linha hairline and a soft navy shadow. Below 1080px a pill "Menu" toggle opens a floating white panel (`md` radius, Float shadow) that ends with a full-width WhatsApp button under a Linha divider.
 
 ### Trust Strip
 Text only: four short Azul Aline lead words in the display face, each with a Tinta Suave qualifier beneath, separated by 1px Linha dividers (vertical on desktop, horizontal on mobile). A white, Float-shadowed band overlapping the hero base. No icons.
 
 ### First-Visit Rail
-The logo's dashed azul band becomes the path of the first consultation: a 3px dashed Azul da Faixa line connecting five 46px numbered circles, each filled with one logo band in logo order (rosa, amarelo, verde, azul, lilás), numbers in Bricolage 800 Azul Aline. Horizontal across five columns on desktop, vertical along the left edge on mobile.
+The logo's dashed azul band becomes the path of the first consultation: a 3px dashed Azul da Faixa line connecting five 46px numbered circles, each filled with one logo band in logo order (rosa, amarelo, verde, azul, lilás), numbers in Bricolage 800 Azul Aline. Horizontal across five columns on desktop, vertical along the left edge on mobile. When the section enters view the rail draws itself (clip-path, exponential ease-out) and each stop gives one soft ring in its own band colour as the line reaches it; without JavaScript or with reduced motion the rail is simply there.
 
 ### Reviews Bento
-White cards with an inset ring and a round initial avatar on a cycling `-50` tint; one large Lilás 50 review set in the display face as the feature. A white rating card with a 3rem Bricolage score and Estrela stars sits beside the heading.
+White cards with an inset ring that lift 2px and take a Lilás ring on hover; one large Lilás 50 review set in the display face as the feature, opened by a large Lilás quotation mark in Bricolage 800. A white rating card with a 3rem Bricolage score and Estrela stars sits beside the heading.
 
 ### Gallery
 Real clinic photos in `md` tiles with a white pill caption chip at bottom left; the treatment room is the large tile. A slow 1.04 zoom on hover.
 
 ### FAQ Accordion
-White `md` items with the Card shadow, Figtree 650 questions, and a circular Lilás 50 plus that rotates into a close mark and turns full Lilás when open.
+White `md` items with the Card shadow, Figtree 650 questions, and a circular Lilás 50 plus that rotates into a close mark and turns full Lilás when open. Beside the list, the intro holds a white contact card: her avatar with a Lilás ring, "Fale com a equipe da Dra. Aline", the hours, and a full-width WhatsApp button.
 
 ### Closing and Footer
 The closing sits on Lilás 50 with the full transparent official logo centred above a Display headline and primary plus outline actions. The footer is light: white, a Linha top border, the horizontal logo lockup and two short link columns.
+
+### Motion
+One authored moment: on load the rainbow around the portrait draws itself band by band (stroke-dashoffset, 1.5s exponential ease-out, 0.11s stagger; the dashed band fades in), while the portrait settles from 1.05 and the info cards rise. The first-visit rail echoes it once on scroll. Everything else is state: hovers, the accordion, the menu. All of it is off under `prefers-reduced-motion`, where every element renders in its final state.
 
 ### Mobile Booking Dock
 A full-width Azul Aline pill (56px) fixed at the bottom on phones, shown only while neither the hero nor the closing is in view.

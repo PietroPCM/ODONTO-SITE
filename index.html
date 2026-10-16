@@ -86,6 +86,7 @@
           <li><a href="#consultorio">Consultório</a></li>
           <li><a href="#avaliacoes">Avaliações</a></li>
           <li><a href="#onde">Onde fica</a></li>
+          <li class="nav__cta"><a class="button button--primary" href="https://wa.me/5545984333443?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Dra.%20Aline%20e%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-whatsapp"/></svg><span>Agendar pelo WhatsApp</span></a></li>
         </ul>
       </nav>
 
@@ -129,18 +130,20 @@
         </div>
 
         <div class="hero__media">
-          <svg class="hero__arcs" viewBox="0 0 400 220" aria-hidden="true" focusable="false">
-            <path d="M20 210a180 180 0 0 1 360 0" stroke="#fbb5b7"/>
-            <path d="M48 210a152 152 0 0 1 304 0" stroke="#fef4ae"/>
-            <path d="M76 210a124 124 0 0 1 248 0" stroke="#a9d3b7"/>
-            <path d="M104 210a96 96 0 0 1 192 0" stroke="#add8ed" stroke-dasharray="14 12"/>
-            <path d="M132 210a68 68 0 0 1 136 0" stroke="#e6cbfc"/>
+          <!-- O arco-íris do logo em volta do retrato, como em volta do dente na marca.
+               Unidades: a foto ocupa x 0–100; o arco do retrato tem centro em (50, 50). -->
+          <svg class="hero__arcs" viewBox="-23 -23 146 130" aria-hidden="true" focusable="false">
+            <path class="arc" style="--i:0" d="M-21 105V50A71 71 0 0 1 121 50V105" stroke="#fbb5b7" pathLength="1"/>
+            <path class="arc" style="--i:1" d="M-17 105V50A67 67 0 0 1 117 50V105" stroke="#fef4ae" pathLength="1"/>
+            <path class="arc" style="--i:2" d="M-13 105V50A63 63 0 0 1 113 50V105" stroke="#a9d3b7" pathLength="1"/>
+            <path class="arc arc--dashed" style="--i:3" d="M-9 105V50A59 59 0 0 1 109 50V105" stroke="#add8ed" stroke-dasharray="3.4 2.6"/>
+            <path class="arc" style="--i:4" d="M-5 105V50A55 55 0 0 1 105 50V105" stroke="#e6cbfc" pathLength="1"/>
           </svg>
           <figure class="hero__photo">
             <img
               src="assets/photos/aline-retrato-960.jpg"
               srcset="assets/photos/aline-retrato-640.jpg 640w, assets/photos/aline-retrato-960.jpg 960w, assets/photos/aline-retrato-1400.jpg 1400w"
-              sizes="(min-width: 960px) 44vw, 100vw"
+              sizes="(min-width: 960px) 34vw, 62vw"
               width="1400" height="2100"
               alt="Dra. Aline Sanfelice sorrindo à mesa do consultório, com painéis em arco nas cores pastel ao fundo"
               fetchpriority="high" decoding="async" />
@@ -294,7 +297,7 @@
 
         <div class="gallery">
           <figure class="gallery__item gallery__item--wide">
-            <img src="assets/photos/sala-1600.jpg" srcset="assets/photos/sala-800.jpg 800w, assets/photos/sala-1600.jpg 1600w" sizes="(min-width: 960px) 58vw, 100vw" width="1600" height="1200" loading="lazy" decoding="async" alt="Sala de atendimento com cadeira infantil, painéis em arco nas cores pastel e mesa de conversa com os pais" />
+            <img src="assets/photos/sala-1600.jpg" srcset="assets/photos/sala-800.jpg 800w, assets/photos/sala-1600.jpg 1600w" sizes="(min-width: 960px) 72vw, 100vw" width="1600" height="1200" loading="lazy" decoding="async" alt="Sala de atendimento com cadeira infantil, painéis em arco nas cores pastel e mesa de conversa com os pais" />
             <figcaption>Sala de atendimento</figcaption>
           </figure>
           <figure class="gallery__item gallery__item--tall">
@@ -306,7 +309,7 @@
             <figcaption>Cantinho de brincar</figcaption>
           </figure>
           <figure class="gallery__item">
-            <img src="assets/photos/brincar-1000.jpg" srcset="assets/photos/brincar-600.jpg 600w, assets/photos/brincar-1000.jpg 1000w" sizes="(min-width: 960px) 30vw, 50vw" width="1000" height="1333" loading="lazy" decoding="async" alt="Duas crianças brincando no painel interativo da parede da recepção" />
+            <img src="assets/photos/brincar-1000.jpg" srcset="assets/photos/brincar-600.jpg 600w, assets/photos/brincar-1000.jpg 1000w" sizes="(min-width: 960px) 25vw, 100vw" width="1000" height="1333" loading="lazy" decoding="async" alt="Duas crianças brincando no painel interativo da parede da recepção" />
             <figcaption>Painel de brincar</figcaption>
           </figure>
           <blockquote class="gallery__quote">
@@ -368,10 +371,16 @@
         <div class="faq__intro">
           <h2 class="section-title" id="faq-title">Dúvidas dos pais</h2>
           <p class="lead">Não achou a sua? Pergunte direto pelo WhatsApp.</p>
-          <a class="button button--primary" href="https://wa.me/5545984333443?text=Ol%C3%A1%2C%20Dra.%20Aline!%20Tenho%20uma%20d%C3%BAvida%20sobre%20o%20atendimento." target="_blank" rel="noopener">
-            <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-whatsapp"/></svg>
-            <span>Fazer uma pergunta</span>
-          </a>
+          <div class="faq__contact">
+            <div class="faq__person">
+              <img src="assets/photos/aline-avatar-200.jpg" width="56" height="56" alt="" loading="lazy" decoding="async" />
+              <p><strong>Fale com a equipe da Dra. Aline</strong>Segunda a sexta, das 8h às 18h</p>
+            </div>
+            <a class="button button--primary" href="https://wa.me/5545984333443?text=Ol%C3%A1%2C%20Dra.%20Aline!%20Tenho%20uma%20d%C3%BAvida%20sobre%20o%20atendimento." target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-whatsapp"/></svg>
+              <span>Fazer uma pergunta</span>
+            </a>
+          </div>
         </div>
 
         <div class="faq__list" data-concerns>
@@ -412,7 +421,7 @@
     <section class="place section" id="onde" aria-labelledby="place-title">
       <div class="place__inner wrap">
         <figure class="place__photo">
-          <img src="assets/photos/fachada-frente-1000.jpg" srcset="assets/photos/fachada-frente-600.jpg 600w, assets/photos/fachada-frente-1000.jpg 1000w" sizes="(min-width: 960px) 40vw, 100vw" width="1000" height="1333" loading="lazy" decoding="async" alt="Fachada do consultório na Rua Fortaleza, com o letreiro Aline Sanfelice Odontopediatria Avançada e o arco-íris do logo" />
+          <img src="assets/photos/fachada-frente-1000.jpg" srcset="assets/photos/fachada-frente-600.jpg 600w, assets/photos/fachada-frente-1000.jpg 1000w" sizes="(min-width: 960px) 46vw, 100vw" width="1000" height="1333" loading="lazy" decoding="async" alt="Fachada do consultório na Rua Fortaleza, com o letreiro Aline Sanfelice Odontopediatria Avançada e o arco-íris do logo" />
         </figure>
 
         <div class="place__card">
@@ -472,7 +481,7 @@
         <a class="logo" href="#topo" aria-label="Voltar ao início">
           <img class="logo__img" src="assets/brand/logo-horizontal.png" width="589" height="120" alt="Aline Sanfelice Odontopediatria Avançada" loading="lazy" decoding="async" />
         </a>
-        <p>Responsável técnica: Dra. Aline Sanfelice · CRO-PR 22438</p>
+        <p>Responsável técnica: <span class="nowrap">Dra. Aline Sanfelice · CRO-PR 22438</span></p>
       </div>
       <div class="site-footer__col">
         <p class="site-footer__label">Visite</p>
@@ -486,7 +495,7 @@
           <li><a href="https://maps.app.goo.gl/1zPVbfsscRTXwTze8" target="_blank" rel="noopener">Perfil no Google</a></li>
         </ul>
       </div>
-      <p class="site-footer__note">As informações deste site têm caráter informativo e não substituem uma avaliação odontológica individual. © <span data-year>2026</span> Aline Sanfelice · Odontopediatria Avançada.</p>
+      <p class="site-footer__note">As informações deste site têm caráter informativo e não substituem uma avaliação odontológica individual. <span class="nowrap">© <span data-year>2026</span></span> Aline Sanfelice · Odontopediatria Avançada.</p>
     </div>
   </footer>
 
@@ -507,11 +516,6 @@
     <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.75"/><path fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" d="M12 7.5V12l3 2"/></symbol>
     <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4" fill="none" stroke="currentColor" stroke-width="1.75"/></symbol>
     <symbol id="i-route" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" d="M6 19a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm12-9a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM8.5 16.5H15a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h6.5"/></symbol>
-    <symbol id="i-tooth" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round" d="M7.4 13.6C5.6 9 7.8 4.5 11 5.3c.5.1.7.3 1 .3s.5-.2 1-.3c3.2-.8 5.4 3.7 3.6 8.3-.9 2.3-1 4-1.4 6.2-.3 1.5-1.8 1.6-2.1.2l-.6-2.8c-.2-.8-1.3-.8-1.5 0l-.6 2.8c-.3 1.4-1.8 1.3-2.1-.2-.4-2.2-.5-3.9-1.4-6.2z"/></symbol>
-    <symbol id="i-heart" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round" d="M12 19.5s-7.5-4.4-7.5-10A4.2 4.2 0 0 1 12 7a4.2 4.2 0 0 1 7.5 2.5c0 5.6-7.5 10-7.5 10z"/></symbol>
-    <symbol id="i-sparkle" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round" d="M12 3.5l1.9 5.1 5.1 1.9-5.1 1.9L12 17.5l-1.9-5.1L5 10.5l5.1-1.9zM18.5 16l.7 1.8 1.8.7-1.8.7-.7 1.8-.7-1.8-1.8-.7 1.8-.7z"/></symbol>
-    <symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round" d="M19 14.5A7.5 7.5 0 0 1 9.5 5a7.5 7.5 0 1 0 9.5 9.5z"/></symbol>
-    <symbol id="i-access" viewBox="0 0 24 24"><circle cx="12" cy="4.8" r="1.6" fill="currentColor"/><path fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" d="M5.5 8.5 12 9.5l6.5-1M12 9.5v4.5m0 0-3 6.5m3-6.5 3 6.5"/></symbol>
     <symbol id="i-car" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" d="M5 16.5V12l1.8-4.5A2 2 0 0 1 8.7 6h6.6a2 2 0 0 1 1.9 1.5L19 12v4.5M5 16.5h14M5 16.5V18m14-1.5V18M5 12h14"/><circle cx="8" cy="14.2" r=".9" fill="currentColor"/><circle cx="16" cy="14.2" r=".9" fill="currentColor"/></symbol>
   </svg>
 
